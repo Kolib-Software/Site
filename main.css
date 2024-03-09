@@ -1,0 +1,14 @@
+@font-face {
+    font-family: FontAwesome;
+    src: url(assets/FontAwesome.otf);
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url(assets/Heebo.ttf);
+}
+
+html {
+    font-family: Heebo;
+    background-color: gray;
+}
