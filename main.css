@@ -1,6 +1,6 @@
 @font-face {
-    font-family: FontAwesome;
-    src: url(assets/fontawesome.otf);
+    font-family: fa-solid;
+    src: url(assets/fa-solid.otf);
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 }
 
 .icon {
-    font-family: FontAwesome;
+    font-family: fa-solid;
     font-style: normal;
     padding: 0.25em;
 }
