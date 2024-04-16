@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+html {
+    background-color: #1C1C1C;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px calc(100% - 100px);
+}
+
+
+header {
+    grid-row: 1/1;
+    display: grid;
+    grid-template-columns: 105px 300px auto 800px;
+    grid-template-rows: auto;
+
+    border-bottom: 5px solid #6AA84F;
+}
+header img{
+    height: 65px;
+    width: 65px;
+    margin: auto;
+}
+header h1{
+    justify-self: center;
+    font-weight: 600;
+}
+
+header nav{
+    grid-column: 4/4;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav a {
+  border-left: 0px solid transparent; 
+  border-bottom: 0px solid transparent; 
+  padding: 10px;
+  transition: border 0.5s; 
+}
+
+header nav a:hover {
+  border-left: 5px solid #FFFFFF;
+  border-bottom: 5px solid #FFFFFF; 
+}
+
+.navSeleccionado {
+    border-left: 5px solid #6AA84F;
+    border-bottom: 5px solid #6AA84F;
+    color: #6AA84F !important;
+}
+
+
+main {
+    grid-row: 2/2;
+}
+
+.IndexPage {
+    display: grid;
+    grid-template-rows: 25px 180px 275px 275px;
+    grid-template-columns: 25px 890px 100px auto auto 25px;
+}
+
+.IndexSlogan {
+    grid-column: 2/6;
+    grid-row: 2/2;
+}
+.IndexAnimation {
+    grid-column: 4/6;
+    grid-row: 3/5;
+}
+
+.IndexTexto01 {
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+.IndexTexto02 {
+    grid-column: 2/4;
+    grid-row: 4/4;
+}
+
+.IndexTexto01 h3, .IndexTexto02 h3{
+    font-size: 2rem;
+}
+
+.IndexTexto01 p, .IndexTexto02 p{
+    font-size: 1.25rem;
+}
+
+.TextoLogo {
+    color: #6AA84F;
+    font-family: Consolas;
+}
+
+.textoBasico {
+    color: #FFFFFF;
+    font-family: Sora;
+}
+
+.textoCodigo {
+    color: #6AA84F;
+    font-family: Consolas;
+}
+.textoSlogan {
+    font-size: 2.75em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.textoNav {
+    text-decoration: none;
+    font-size: 2rem;
+}
