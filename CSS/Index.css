@@ -1,1 +1,130 @@
+.IndexPage {
+    display: grid;
+    grid-template-rows: 25px 180px 275px 275px;
+    grid-template-columns: 25px 890px 100px auto auto 25px;
+}
 
+.IndexSlogan {
+    grid-column: 2/6;
+    grid-row: 2/2;
+}
+.IndexAnimation {
+    grid-column: 4/6;
+    grid-row: 3/5;
+}
+
+.IndexTexto01 {
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+.IndexTexto02 {
+    grid-column: 2/4;
+    grid-row: 4/4;
+}
+
+.IndexTexto01 h3, .IndexTexto02 h3{
+    font-size: 2rem;
+}
+
+.IndexTexto01 p, .IndexTexto02 p{
+    font-size: 1.25rem;
+}
+
+.textoCodigo {
+    color: #6AA84F;
+    font-family: Consolas;
+}
+.textoSlogan {
+    font-size: 2.75rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1360px) {
+    .textoSlogan{
+        font-size: 2.5rem;
+    }
+    .IndexAnimation {
+        grid-column: 3/6;
+        grid-row: 3/5;
+    }
+  }
+
+  @media only screen and (max-width: 1250px) {
+    .IndexPage{
+        grid-template-rows: 25px 180px auto 275px 275px 125px;
+        grid-template-columns: 25px auto 25px;
+    }
+
+    .IndexAnimation {
+        grid-column: 2/2;
+        grid-row: 3/3;
+    }
+    dotlottie-player{
+        height: 500px;
+        width: 500px;
+        margin: auto;
+    }
+
+    .IndexTexto01 {
+        grid-column: 2/2;
+        grid-row: 4/4;
+    }
+    .IndexTexto02 {
+        grid-column: 2/2;
+        grid-row: 5/5;
+    }
+
+    .textoSlogan{
+        font-size: 2rem;
+    }
+
+    .IndexTexto01 h3, .IndexTexto02 h3{
+        font-size: 1.95rem;
+    }
+    
+    .IndexTexto01 p, .IndexTexto02 p{
+        font-size: 1.15rem;
+    }
+    
+  }
+
+  @media only screen and (max-width: 990px) {
+    .textoSlogan{
+        font-size: 1.75rem;
+    }
+    .IndexTexto01 h3, .IndexTexto02 h3{
+        font-size: 1.75rem;
+    }
+    
+    .IndexTexto01 p, .IndexTexto02 p{
+        font-size: 1.05rem;
+    }
+  }
+
+  @media only screen and (max-width: 870px) {
+    .textoSlogan{
+        font-size: 1.15rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .IndexPage{
+        grid-template-rows: 25px 120px auto 195px 195px 65px;
+        grid-template-columns: 5px auto 5px;
+    }
+    dotlottie-player{
+        height: 300px;
+        width: 300px;
+    }
+    .textoSlogan{
+        font-size: 0.99rem;
+    }
+    .IndexTexto01 h3, .IndexTexto02 h3{
+        font-size: 1.10rem;
+    }
+    
+    .IndexTexto01 p, .IndexTexto02 p{
+        font-size: 0.85rem;
+    }
+  }
