@@ -70,6 +70,11 @@ main {
     font-family: Consolas;
 }
 
+.textoCodigo {
+    color: #6AA84F;
+    font-family: Consolas;
+}
+
 .textoBasico {
     color: #FFFFFF;
     font-family: Sora;
