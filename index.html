@@ -7,30 +7,84 @@
     <link rel="shortcut icon" href="favicon.png">
     <title>Kolib Software</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="CSS/Base.css">
+    <link rel="stylesheet" href="CSS/Index.css">
     <script src="main.js" type="module"></script>
 </head>
 
 <body>
     <header>
-        <img src="assets/logo.png" />
-        <h1>Kolib Software</h1>
+        <img src="assets/Images/LogoHD.png" />
+        <h1 class="TextoLogo">Kolib Software</h1>
+
+        <nav>
+            <a class="textoBasico textoNav navSeleccionado" href="index.html">Home</a>
+            <a class="textoBasico textoNav" href="about.html">About</a>
+            <a class="textoBasico textoNav" href="contact.html">Contact</a>
+            <a class="textoBasico textoNav" href="policy.html">Policy</a>
+        </nav>
+
     </header>
-    <nav>
-        <a href="index.html"><i class="icon">house</i>Home</a>
-        <a href="about.html"><i class="icon">info</i>About</a>
-        <a href="contact.html"><i class="icon">book</i>Contact</a>
-        <a href="policy.html"><i class="icon">shield</i>Policy</a>
-    </nav>
     <main>
-        <div class="background"></div>
         <div id="article-list">
-            <article>
-                <h2>Title</h2>
-                <p>Content</p>
+            <article class="IndexPage">
+
+                <div class="IndexSlogan">
+                    <h2 class="textoCodigo textoSlogan"> // Building your ideas,  </h2>
+                    <h2 class="textoCodigo textoSlogan"> // web and software to elevate your business... </h2>
+                </div>
+
+                
+
+                <dotlottie-player class="IndexAnimation"
+                                  src="assets/Animations/KolibSoftware001a.json" 
+                                  background="transparent" speed="1"
+                                  loop autoplay></dotlottie-player>
+
+                <div class="IndexTexto01">
+                    <h3 class="textoBasico"> Digital Innovation Within Reach </h3>
+                    <p class="textoBasico">
+                        We delve into the latest trends in software and web 
+                        <br />
+                        application development, focusing on how technological
+                        <br />
+                        solutions cantransform businesses and enrich everyday 
+                        <br />
+                        life. From artificial intelligence to cloud computing,
+                        <br />
+                        we break down complex concepts to make them accessible 
+                        <br />
+                        and applicable.
+                    </p>
+                </div>
+
+                <div class="IndexTexto02">
+                    <h3 class="textoBasico">
+                        From Idea to
+                        Implementation:
+                        A Technological Journey
+                    </h3>
+                    <p class="textoBasico">
+                        Join us on the complete creative journey of building 
+                        <br />
+                        software and websites from scratch. We cover everything 
+                        <br />
+                        from ideation, user interface design, to coding and 
+                        <br />
+                        launch. Discover how to turn a vision into a functional 
+                        <br />
+                        and engaging reality that resonates with end-users.
+                    </p>
+                </div>
+
+                
+
             </article>
         </div>
     </main>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
 </body>
 
 </html>
