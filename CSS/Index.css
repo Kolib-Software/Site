@@ -36,6 +36,7 @@
     margin-bottom: 20px;
 }
 
+
 @media only screen and (max-width: 1360px) {
     .textoSlogan{
         font-size: 2.5rem;
@@ -106,7 +107,7 @@
 
   @media only screen and (max-width: 600px) {
     .IndexPage{
-        grid-template-rows: 25px 120px auto 195px 195px 65px;
+        grid-template-rows: 25px 120px auto auto auto 65px;
         grid-template-columns: 5px auto 5px;
     }
     dotlottie-player{
