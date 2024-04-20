@@ -1,6 +1,6 @@
 .IndexPage {
     display: grid;
-    grid-template-rows: 25px 180px 275px 275px;
+    grid-template-rows: 25px 250px 275px 275px;
     grid-template-columns: 25px 890px 100px auto auto 25px;
 }
 
@@ -38,9 +38,6 @@
 
 
 @media only screen and (max-width: 1360px) {
-    .textoSlogan{
-        font-size: 2.5rem;
-    }
     .IndexAnimation {
         grid-column: 3/6;
         grid-row: 3/5;
@@ -49,7 +46,7 @@
 
   @media only screen and (max-width: 1250px) {
     .IndexPage{
-        grid-template-rows: 25px 180px auto 275px 275px 125px;
+        grid-template-rows: 25px 180px auto 275px 2000px;
         grid-template-columns: 25px auto 25px;
     }
 
@@ -72,10 +69,6 @@
         grid-row: 5/5;
     }
 
-    .textoSlogan{
-        font-size: 2rem;
-    }
-
     .IndexTexto01 h3, .IndexTexto02 h3{
         font-size: 1.95rem;
     }
@@ -87,9 +80,6 @@
   }
 
   @media only screen and (max-width: 990px) {
-    .textoSlogan{
-        font-size: 1.75rem;
-    }
     .IndexTexto01 h3, .IndexTexto02 h3{
         font-size: 1.75rem;
     }
@@ -99,15 +89,15 @@
     }
   }
 
-  @media only screen and (max-width: 870px) {
+  @media only screen and (max-width: 820px) {
     .textoSlogan{
-        font-size: 1.15rem;
+        font-size: 2rem;
     }
   }
 
   @media only screen and (max-width: 600px) {
     .IndexPage{
-        grid-template-rows: 25px 120px auto auto auto 65px;
+        grid-template-rows: 25px 120px auto auto 2000px ;
         grid-template-columns: 5px auto 5px;
     }
     dotlottie-player{
@@ -115,7 +105,7 @@
         width: 300px;
     }
     .textoSlogan{
-        font-size: 0.99rem;
+        font-size: 1.5rem;
     }
     .IndexTexto01 h3, .IndexTexto02 h3{
         font-size: 1.10rem;
