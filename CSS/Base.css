@@ -9,7 +9,6 @@ html {
 
 body{
     display: grid;
-    grid-template-columns: 100%;
     grid-template-rows: 100px calc(100% - 100px);
 }
 
