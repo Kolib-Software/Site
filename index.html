@@ -8,6 +8,7 @@
     <title>Kolib Software</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="CSS/Base.css">
+    <link rel="stylesheet" href="CSS/ScrollBar.css">
     <link rel="stylesheet" href="CSS/Index.css">
     <script src="main.js" type="module"></script>
 </head>
@@ -28,10 +29,18 @@
     <main>
         <div id="article-list">
             <article class="IndexPage">
-
+               
                 <div class="IndexSlogan">
-                    <h2 class="textoCodigo textoSlogan"> // Building your ideas,  </h2>
-                    <h2 class="textoCodigo textoSlogan"> // web and software to elevate your business... </h2>
+                    <div>
+                        <h2 id="FirstH2" class="textoCodigo textoSlogan" style="display: inline;">
+                        </h2>
+                        <span id="Cursor1" class="textoCodigo textoSlogan">|</span>
+                    </div>
+                    <div>
+                        <h2 id="SecondH2" class="textoCodigo textoSlogan" style="display: inline;">
+                        </h2>
+                        <span id="Cursor2" class="textoCodigo textoSlogan" style="visibility: hidden;">|</span>
+                    </div>
                 </div>
 
                 
@@ -45,15 +54,10 @@
                     <h3 class="textoBasico"> Digital Innovation Within Reach </h3>
                     <p class="textoBasico">
                         We delve into the latest trends in software and web 
-                        <br />
                         application development, focusing on how technological
-                        <br />
                         solutions cantransform businesses and enrich everyday 
-                        <br />
                         life. From artificial intelligence to cloud computing,
-                        <br />
                         we break down complex concepts to make them accessible 
-                        <br />
                         and applicable.
                     </p>
                 </div>
@@ -66,13 +70,9 @@
                     </h3>
                     <p class="textoBasico">
                         Join us on the complete creative journey of building 
-                        <br />
                         software and websites from scratch. We cover everything 
-                        <br />
                         from ideation, user interface design, to coding and 
-                        <br />
                         launch. Discover how to turn a vision into a functional 
-                        <br />
                         and engaging reality that resonates with end-users.
                     </p>
                 </div>
@@ -83,6 +83,7 @@
         </div>
     </main>
 
+    <script src="JS/Index.js" type="module"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
 </body>
