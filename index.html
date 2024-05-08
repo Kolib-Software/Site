@@ -53,12 +53,6 @@
                     </div>
                 </div>
 
-                
-
-                <dotlottie-player class="IndexAnimation" style="display: none;"
-                                  src="assets/Animations/KolibSoftware001a.json" 
-                                  background="transparent" speed="1"
-                                  loop autoplay></dotlottie-player>
 
                 <div class="IndexTexto01">
                     <h3 class="textoBasico"> Digital Innovation Within Reach </h3>
@@ -92,6 +86,19 @@
             </article>
         </div>
     </main>
+
+    <template id="AnimacionEscritorio">
+        <dotlottie-player id="animacionIndex" class="IndexAnimation"
+                                  src="assets/Animations/KolibSoftware001a.json" 
+                                  background="transparent" speed="1" loop autoplay
+                                    ></dotlottie-player>
+    </template>
+    <template id="animacionMovil">
+        <dotlottie-player id="animacionIndex" class="IndexAnimation"
+                                  src="assets/Animations/KolibSoftware001a.json" 
+                                  background="transparent"
+                                    ></dotlottie-player>
+    </template>
 
     <script src="JS/Index.js" type="module"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>

@@ -49,3 +49,33 @@ setTimeout(esloganTecleada, 600, texto1, FirstH2, Cursor1);
 setTimeout(esloganTecleada, 7500, texto2, SecondH2, Cursor2);
 setTimeout(esloganTecleada, 14500, texto3, ThirdH2, Cursor3);
 setTimeout(esloganTecleada, 22500, texto4, fourthH2, Cursor4);
+
+
+function WichAnimation() {
+    var width = window.innerWidth;
+
+    if (width > 1024) {
+        var template = document.getElementById("AnimacionEscritorio");
+        var animacionAnimada = document.importNode(template.content, true);
+        var ArticuloIndex = document.getElementById("article-list").children[0];
+        
+        if(ArticuloIndex.children.length == 3){
+           ArticuloIndex.insertBefore(animacionAnimada, ArticuloIndex.children[2]);
+           console.log("Escritorio1");
+        }
+    }
+    else{
+        var template = document.getElementById("animacionMovil");
+        var animacionDetenida = document.importNode(template.content, true);
+        var ArticuloIndex = document.getElementById("article-list").children[0];
+
+        if(ArticuloIndex.children.length == 3){
+            ArticuloIndex.insertBefore(animacionDetenida, ArticuloIndex.children[2]);
+            console.log("Movil1");
+         }
+    }
+}
+
+WichAnimation();
+
+window.onresize = WichAnimation;
