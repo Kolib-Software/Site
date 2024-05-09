@@ -1,30 +1,22 @@
-function esloganTecleada(texto, elemento, cursor, velocidad = 275) {
+async function esloganTecleada(texto, elemento, cursor, velocidad = 200) {
     let i = 0;
-    const intervalo = setInterval(function() {
+    cursor.style.visibility = "";
+    while (i < texto.length) {
         elemento.textContent += texto.charAt(i);
         i++;
+        await new Promise(resolve => setTimeout(resolve, velocidad));
+    }
 
-        if (i === texto.length) {
-            clearInterval(intervalo);
-            if (elemento.id !== 'fourthH2') {
-                cursor.style.visibility = "hidden";
-                if (elemento.nextElementSibling) {
-                    elemento.nextElementSibling.style.visibility = "visible";
-                }
-            }
+    if (elemento.id !== 'fourthH2') {
+        cursor.style.visibility = "hidden";
+        if (elemento.nextElementSibling) {
+            elemento.nextElementSibling.style.visibility = "visible";
         }
-    }, velocidad);
-
-    const parpadearCursor = setInterval(function() {
-        cursor.style.visibility = (cursor.style.visibility === 'hidden' ? '' : 'hidden');
-    }, 500);
-    
-    setTimeout(function() {
-        if (elemento.id !== 'fourthH2') {
-            clearInterval(parpadearCursor);
-            cursor.style.visibility = "hidden";
-        }
-    }, velocidad * texto.length);
+    } else {
+        setInterval(function() {
+            cursor.style.visibility = (cursor.style.visibility === 'hidden' ? '' : 'hidden');
+        }, 500);
+    }
 }
 
 const FirstH2 = document.getElementById('FirstH2');
@@ -45,10 +37,17 @@ const texto2 = " // web and software to";
 const texto3 = " // elevate your business...";
 const texto4 = " // :)";
 
-setTimeout(esloganTecleada, 600, texto1, FirstH2, Cursor1);
-setTimeout(esloganTecleada, 7500, texto2, SecondH2, Cursor2);
-setTimeout(esloganTecleada, 14500, texto3, ThirdH2, Cursor3);
-setTimeout(esloganTecleada, 22500, texto4, fourthH2, Cursor4);
+async function escribirEslogans() {
+    await esloganTecleada(texto1, FirstH2, Cursor1);
+    Cursor1.style.visibility = "hidden";
+    await esloganTecleada(texto2, SecondH2, Cursor2);
+    Cursor2.style.visibility = "hidden";
+    await esloganTecleada(texto3, ThirdH2, Cursor3);
+    Cursor3.style.visibility = "hidden";
+    await esloganTecleada(texto4, fourthH2, Cursor4);
+}
+
+escribirEslogans();
 
 
 function WichAnimation() {
