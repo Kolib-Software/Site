@@ -63,7 +63,6 @@ main {
 }
 
 
-
 .TextoLogo {
     color: #6AA84F;
     font-family: Consolas;
@@ -77,6 +76,11 @@ main {
 .textoBasico {
     color: #FFFFFF;
     font-family: Sora;
+    font-size: 1.5rem;
+}
+
+.textoTitulo{
+    font-size: 2.75rem;
 }
 
 .textoNav {
