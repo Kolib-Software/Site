@@ -1,0 +1,23 @@
+.policyPage{
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: 150px auto 50px;
+}
+.policyPage h2 {
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+.textoVertical{
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+.textoVertical h3{
+    font-size: 2rem;
+}
+.textoVertical h4{
+    font-size: 1.75rem;
+}
+.textoVertical p{
+    text-align: justify;
+    text-justify: inter-character;
+}
