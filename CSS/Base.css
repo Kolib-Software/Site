@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+html {
+    background-color: #1C1C1C;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    display: grid;
+    grid-template-rows: 100px calc(100% - 100px);
+}
+
+
+header {
+    grid-row: 1/1;
+    display: grid;
+    grid-template-columns: 105px 300px auto 800px;
+    grid-template-rows: auto;
+
+    border-bottom: 5px solid #6AA84F;
+}
+header img{
+    height: 65px;
+    width: 65px;
+    margin: auto;
+}
+header h1{
+    justify-self: center;
+    font-weight: 600;
+}
+
+header nav{
+    grid-column: 4/4;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav a {
+  border-left: 0px solid transparent; 
+  border-bottom: 0px solid transparent; 
+  padding: 10px;
+  transition: border 0.5s; 
+}
+
+header nav a:hover {
+  border-left: 5px solid #FFFFFF;
+  border-bottom: 5px solid #FFFFFF; 
+}
+
+.navSeleccionado {
+    border-left: 5px solid #6AA84F;
+    border-bottom: 5px solid #6AA84F;
+    color: #6AA84F !important;
+}
+
+
+main {
+    grid-row: 2/2;
+}
+
+
+.TextoLogo {
+    color: #6AA84F;
+    font-family: Consolas;
+}
+
+.textoCodigo {
+    color: #6AA84F;
+    font-family: Consolas;
+}
+
+.textoBasico {
+    color: #FFFFFF;
+    font-family: Sora;
+    font-size: 1.5rem;
+}
+
+.textoTitulo{
+    font-size: 2.75rem;
+}
+
+.textoNav {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 1250px) {
+
+    body{
+        grid-template-rows: 145px calc(100% - 145px);
+    }
+    header {
+        grid-template-columns: 25px auto 100px 280px auto 25px;
+        grid-template-rows: 60px 75px;
+    }
+
+    header img{
+        grid-column: 3/3;
+        grid-row: 1/1;
+    }
+    header h1{
+        grid-column: 4/4;
+        grid-row: 1/1;
+        font-size: 2rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        align-content: center;
+    }
+    header nav{
+        grid-column: 1/7;
+        grid-row: 2/2;
+    }
+    .textoNav {
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        grid-template-rows: 140px calc(100% - 140px);
+    }
+    header {
+        grid-template-columns: 25px auto 100px 280px auto 25px;
+        grid-template-rows: 60px 75px;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header nav{
+        gap: 0px;
+    }
+    .textoNav {
+        font-size: 1.25rem;
+    }
+}
+
