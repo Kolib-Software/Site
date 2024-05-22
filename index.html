@@ -1,36 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Info Web -->
+
     <title>Kolib Software</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="main.css">
+    <meta name="description" 
+    content="Digital Innovation at Your Fingertips. We develop technological solutions that transform businesses and enhance daily life, from desktop to mobile.">
+    <meta name="keywords" content="develop, industry, software, kolib">
+    <meta name="author" content="Kolib People">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="t4L19v4gGPOYkLww4VTq4sOCRyxFtnyoxye1edDhD2Y" />
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="CSS/Base.css">
+    <link rel="stylesheet" href="CSS/ScrollBar.css">
+    <link rel="stylesheet" href="CSS/Index.css">
+
+    <!-- Open Graph Meta tags -->
+
+    <meta property="og:title" content="Kolib Software">
+    <meta property="og:description" content="We develop technological solutions that transform businesses and enhance daily life, from desktop to mobile.">
+    <meta property="og:image" content="https://kolibsoftware.ddns.net/assets/Images/LogoHD.png">
+    <meta property="og:url" content="https://kolibsoftware.ddns.net/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kolib Software">
+    <meta name="twitter:description" content="We develop technological solutions that transform businesses and enhance daily life, from desktop to mobile.">
+    <meta name="twitter:image" content="https://kolibsoftware.ddns.net/assets/Images/LogoHD.png">
+
+    <link rel="canonical" href="https://kolibsoftware.ddns.net/index.html">
     <script src="main.js" type="module"></script>
 </head>
 
 <body>
     <header>
-        <img src="assets/logo.png" />
-        <h1>Kolib Software</h1>
+        <img src="assets/Images/LogoHD.png" alt="Kolib Software Logo"/>
+        <h1 class="TextoLogo">Kolib Software</h1>
+
+        <nav>
+            <a class="textoBasico textoNav navSeleccionado" href="index.html">
+                Home
+            </a>
+            <a class="textoBasico textoNav" href="Views/products.html">
+                Products
+            </a>
+            <a class="textoBasico textoNav" href="Views/about.html">
+                About
+            </a>
+            <a class="textoBasico textoNav" href="Views/contact.html">
+                Contact
+            </a>
+            <a class="textoBasico textoNav" href="Views/policy.html">
+                Policy
+            </a>
+        </nav>
+
     </header>
-    <nav>
-        <a href="index.html"><i class="icon">house</i>Home</a>
-        <a href="about.html"><i class="icon">circle-info</i>About</a>
-        <a href="contact.html"><i class="icon">address-book</i>Contact</a>
-        <a href="policy.html"><i class="icon">shield-halved</i>Policy</a>
-    </nav>
     <main>
-        <div class="background"></div>
         <div id="article-list">
-            <article>
-                <h2>Title</h2>
-                <p>Content</p>
+            <article class="IndexPage">
+               
+                <div class="IndexSlogan">
+                    <div>
+                        <h2 id="FirstH2" class="textoCodigo textoSlogan" style="display: inline;">
+                        </h2>
+                        <span id="Cursor1" class="textoCodigo textoSlogan">|</span>
+                    </div>
+                    <div>
+                        <h2 id="SecondH2" class="textoCodigo textoSlogan" style="display: inline;">
+                        </h2>
+                        <span id="Cursor2" class="textoCodigo textoSlogan" style="visibility: hidden;">|</span>
+                    </div>
+                    <div>
+                        <h2 id="ThirdH2" class="textoCodigo textoSlogan" style="display: inline;">
+                        </h2>
+                        <span id="Cursor3" class="textoCodigo textoSlogan" style="visibility: hidden;">|</span>
+                    </div>
+                    <div>
+                        <h2 id="fourthH2" class="textoCodigo textoSlogan" style="display: inline;">
+                        </h2>
+                        <span id="Cursor4" class="textoCodigo textoSlogan" style="visibility: hidden;">|</span>
+                    </div>
+                </div>
+
+
+                <div class="IndexTexto01">
+                    <h3 class="textoBasico"> Digital Innovation Within Reach </h3>
+                    <p class="textoBasico">
+                        We delve into the latest trends in software and web 
+                        application development, focusing on how technological
+                        solutions cantransform businesses and enrich everyday 
+                        life. From artificial intelligence to cloud computing,
+                        we break down complex concepts to make them accessible 
+                        and applicable.
+                    </p>
+                </div>
+
+                <div class="IndexTexto02">
+                    <h3 class="textoBasico">
+                        From Idea to
+                        Implementation:
+                        A Technological Journey
+                    </h3>
+                    <p class="textoBasico">
+                        Join us on the complete creative journey of building 
+                        software and websites from scratch. We cover everything 
+                        from ideation, user interface design, to coding and 
+                        launch. Discover how to turn a vision into a functional 
+                        and engaging reality that resonates with end-users.
+                    </p>
+                </div>
+
+                
+
             </article>
         </div>
     </main>
+
+    <footer>
+        <p class="TextoLogo">&copy; 2024 Kolib Software</p>
+    </footer>
+
+    <template id="AnimacionEscritorio">
+        <dotlottie-player id="animacionIndex" class="IndexAnimation"
+                                  src="assets/Animations/KolibSoftware001a.json" 
+                                  background="transparent" speed="1" loop autoplay
+                                    ></dotlottie-player>
+    </template>
+    <template id="animacionMovil">
+        <dotlottie-player id="animacionIndex" class="IndexAnimation"
+                                  src="assets/Animations/KolibSoftware001a.json" 
+                                  background="transparent"
+                                    ></dotlottie-player>
+    </template>
+
+    <script src="JS/Index.js" type="module"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
 </body>
 
 </html>
