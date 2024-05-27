@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Base.css">
     <link rel="stylesheet" href="../CSS/About.css">
+    <script src="../JS/Locale.js" type="module"></script>
     <script src="main.js" type="module"></script>
 </head>
 
@@ -18,38 +19,38 @@
         <h1 class="TextoLogo">Kolib Software</h1>
 
         <nav>
-            <a class="textoBasico textoNav" href="../index.html">Home</a>
-            <a class="textoBasico textoNav" href="products.html">Products</a>
-            <a class="textoBasico textoNav navSeleccionado" href="about.html">About</a>
-            <a class="textoBasico textoNav" href="contact.html">Contact</a>
-            <a class="textoBasico textoNav" href="policy.html">Policy</a>
+            <a class="textoBasico textoNav" href="../index.html" data-locale="text=home">Home</a>
+            <a class="textoBasico textoNav" href="products.html" data-locale="text=products">Products</a>
+            <a class="textoBasico textoNav navSeleccionado" href="about.html" data-locale="text=about">About</a>
+            <a class="textoBasico textoNav" href="contact.html" data-locale="text=contact">Contact</a>
+            <a class="textoBasico textoNav" href="policy.html" data-locale="text=policy">Policy</a>
         </nav>
 
     </header>
     <main>
         <article class="document aboutPage">
             
-            <h2 class="textoCodigo textoTitulo"> // Sobre nosotros y servicios </h2>
+            <h2 class="textoCodigo textoTitulo" data-locale="text=texto01_titulo"> // Sobre nosotros y servicios </h2>
 
             <img class="imagenAbout" src="../assets/Images/LogoHD.png"/>
 
-            <p class="textoBasico textoAbout">
+            <p class="textoBasico textoAbout" data-locale="html=texto01">
                 En <b>Kolib Software</b>, somos una empresa innovadora y apasionada por la tecnología, dedicada a la creación de 
                 soluciones de software que impulsan el éxito de nuestros clientes. Con un enfoque en la plataforma .NET, nuestro 
                 equipo de expertos diseña y desarrolla aplicaciones robustas y de alto rendimiento para una variedad de necesidades y plataformas.
             </p>
             <div class="textoVertical">
-                <p class="textoBasico textoAbout">
+                <p class="textoBasico textoAbout" data-locale="html=texto02">
                     <b>Software de Escritorio</b>: Utilizando WPF y WinUI3, construimos interfaces de usuario ricas e interactivas que son tanto funcionales 
                     como estéticamente agradables, asegurando una experiencia de usuario fluida y coherente.
                 </p>
-                <p class="textoBasico textoAbout">
+                <p class="textoBasico textoAbout" data-locale="html=texto03">
                     <b>Desarrollo Móvil</b>: A través de Xamarin y .NET MAUI, ofrecemos aplicaciones móviles multiplataforma que entregan rendimiento y fiabilidad, permitiendo a los usuarios acceder a nuestras soluciones en cualquier momento y lugar.
                 </p>
-                <p class="textoBasico textoAbout">
+                <p class="textoBasico textoAbout" data-locale="html=texto04">
                     <b>Soluciones Web</b>: Nuestro dominio de ASP.NET y la implementación de API REST nos permite crear aplicaciones web escalables y seguras, que sirven como la columna vertebral digital para negocios que buscan crecer y expandirse en el entorno online.
                 </p>
-                <p class="textoBasico textoAbout">
+                <p class="textoBasico textoAbout" data-locale="html=texto05">
                     En <b>Kolib Software</b>, creemos en el poder de la tecnología para transformar y mejorar. Estamos comprometidos con la excelencia y la innovación continua, asegurando que cada proyecto no solo cumpla, sino que supere las expectativas de nuestros clientes.
                 </p>
             </divx>

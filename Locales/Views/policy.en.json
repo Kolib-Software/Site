@@ -1,0 +1,23 @@
+{
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "policy": "Policy",
+    "h2": "// Privacy Policy",
+    "h3_01": "General Information",
+    "p_01": "This Privacy Policy describes how we collect, use and share personal information from users of our application. By using our application, you accept the practices described in this policy.",
+    "h3_02": "Information gathering",
+    "h4_01": "● Personal information",
+    "p_02": "We do not collect personally identifiable information from users of our application.",
+    "h4_02": "● Device Information",
+    "p_03": "We collect information about the device you use to access our application. This may include the device model, operating system version, IP address, and other technical details.",
+    "h3_03": "Use of Information",
+    "p_04": "We use the information collected to improve our application and provide an optimal user experience. We do not share or sell personal information with third parties.",
+    "h3_04": "Cookies and Similar Technologies",
+    "p_05": "Our application does not use cookies or similar technologies to track user activity.",
+    "h3_05": "Changes to this Privacy Policy",
+    "p_06": "We may update this Privacy Policy from time to time. Any changes will be posted on this page.",
+    "h3_06": "Contact",
+    "p_07": "If you have any questions about this Privacy Policy, please contact us via email."
+}

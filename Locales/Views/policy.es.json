@@ -1,0 +1,23 @@
+{
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Acerca",
+    "contact": "Contacto",
+    "policy": "Política",
+    "h2": "// Política de Privacidad",
+    "h3_01": "Información General",
+    "p_01": "Esta Política de Privacidad describe cómo recopilamos, utilizamos y compartimos información personal de los usuarios de nuestra aplicación. Al utilizar nuestra aplicación, aceptas las prácticas descritas en esta política.",
+    "h3_02": "Recopilación de Información",
+    "h4_01": "● Información Personal",
+    "p_02": "No recopilamos información personal identificable de los usuarios de nuestra aplicación.",
+    "h4_02": "● Información del Dispositivo",
+    "p_03": "Recopilamos información sobre el dispositivo que utilizas para acceder a nuestra aplicación. Esto puede incluir el modelo del dispositivo, la versión del sistema operativo, la dirección IP y otros detalles técnicos.",
+    "h3_03": "Uso de la Información",
+    "p_04": "Utilizamos la información recopilada para mejorar nuestra aplicación y proporcionar una experiencia óptima para el usuario. No compartimos ni vendemos información personal con terceros.",
+    "h3_04": "Cookies y Tecnologías Similares",
+    "p_05": "Nuestra aplicación no utiliza cookies ni tecnologías similares para rastrear la actividad del usuario.",
+    "h3_05": "Cambios en esta Política de Privacidad",
+    "p_06": "Podemos actualizar esta Política de Privacidad de vez en cuando. Cualquier cambio se publicará en esta página.",
+    "h3_06": "Contacto",
+    "p_07": "Si tienes alguna pregunta sobre esta Política de Privacidad, contáctanos por correo electrónico."
+}

@@ -32,19 +32,47 @@ Cursor2.style.visibility = "hidden";
 Cursor3.style.visibility = "hidden";
 Cursor4.style.visibility = "hidden";
 
-const texto1 = " // Building your ideas,";
-const texto2 = " // web and software to";
-const texto3 = " // elevate your business...";
+const text1 = " // Building your ideas,";
+const text2 = " // web and software to";
+const text3 = " // elevate your business...";
+const text4 = " // :)";
+
+const texto1 = " // Construyendo tus ideas,";
+const texto2 = " // web y software para";
+const texto3 =  " // elevar tu negocio…";
 const texto4 = " // :)";
 
 async function escribirEslogans() {
-    await esloganTecleada(texto1, FirstH2, Cursor1);
-    Cursor1.style.visibility = "hidden";
-    await esloganTecleada(texto2, SecondH2, Cursor2);
-    Cursor2.style.visibility = "hidden";
-    await esloganTecleada(texto3, ThirdH2, Cursor3);
-    Cursor3.style.visibility = "hidden";
-    await esloganTecleada(texto4, fourthH2, Cursor4);
+
+    if(localStorage.locale == "en"){
+        await esloganTecleada(text1, FirstH2, Cursor1);
+        Cursor1.style.visibility = "hidden";
+        await esloganTecleada(text2, SecondH2, Cursor2);
+        Cursor2.style.visibility = "hidden";
+        await esloganTecleada(text3, ThirdH2, Cursor3);
+        Cursor3.style.visibility = "hidden";
+        await esloganTecleada(text4, fourthH2, Cursor4);
+    }
+    else if (localStorage.locale == "es"){
+        await esloganTecleada(texto1, FirstH2, Cursor1);
+        Cursor1.style.visibility = "hidden";
+        await esloganTecleada(texto2, SecondH2, Cursor2);
+        Cursor2.style.visibility = "hidden";
+        await esloganTecleada(texto3, ThirdH2, Cursor3);
+        Cursor3.style.visibility = "hidden";
+        await esloganTecleada(texto4, fourthH2, Cursor4);
+    }
+    else{
+        await esloganTecleada(text1, FirstH2, Cursor1);
+        Cursor1.style.visibility = "hidden";
+        await esloganTecleada(text2, SecondH2, Cursor2);
+        Cursor2.style.visibility = "hidden";
+        await esloganTecleada(text3, ThirdH2, Cursor3);
+        Cursor3.style.visibility = "hidden";
+        await esloganTecleada(text4, fourthH2, Cursor4);
+    }
+
+    
 }
 
 escribirEslogans();
