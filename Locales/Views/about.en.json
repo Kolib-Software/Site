@@ -1,0 +1,13 @@
+{
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "policy": "Policy",
+    "texto01_titulo": "// About Us and Services",
+    "texto01": "At <b>Kolib Software</b>, we are an innovative and technology-driven company dedicated to creating software solutions that drive our clients’ success. With a focus on the .NET platform, our team of experts designs and develops robust, high-performance applications for a variety of needs and platforms.",
+    "texto02": "<b>Desktop Software</b>: Using WPF and WinUI3, we build rich and interactive user interfaces that are both functional and aesthetically pleasing. Our goal is to ensure a seamless and consistent user experience.",
+    "texto03": "<b>Mobile Development</b>: Through Xamarin and .NET MAUI, we offer cross-platform mobile applications that deliver performance and reliability. Users can access our solutions anytime, anywhere.",
+    "texto04": "<b>Web Solutions</b>: Leveraging our expertise in ASP.NET and REST API implementation, we create scalable and secure web applications. These serve as the digital backbone for businesses seeking growth and expansion in the online environment.",
+    "texto05": "At <b>Kolib Software</b>, we believe in the transformative power of technology. We are committed to excellence and continuous innovation, ensuring that each project not only meets but exceeds our clients’ expectations."
+}
