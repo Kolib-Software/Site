@@ -5,7 +5,16 @@ async function setLocale(locale = null) {
     locale ??= localStorage.locale;
     localStorage.locale = locale;
 
-    let source = `/Locales${location.pathname.split(".")[0]}.${locale}.json`;
+    let source;
+    let currentPath = location.pathname;
+    if(currentPath === "/"){
+        source = `/Locales/Index.${locale}.json`;
+    }
+    else{
+        source = `/Locales${location.pathname.split(".")[0]}.${locale}.json`;
+    }
+
+    
     let response = await fetch(source);
     let json = await response.json();
 
