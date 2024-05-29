@@ -1,0 +1,87 @@
+footer{
+    border-top: 5px solid #6AA84F;
+    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 55px;
+}
+
+.contenedorModulos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contenedorModulos div:not(.BanderaLenguaje){
+    max-width: 460px;
+    min-width: 350px;
+    max-height: 350px;
+    min-height: 250px;
+    margin-left: 5px;
+}
+
+footer .textoCodigo{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+footer a{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75px;
+    width: 280px;
+    text-decoration: none;
+}
+footer a:hover svg{
+    fill: #6AA84F;
+}
+footer a p, .BanderaLenguaje p{
+    margin-left: 15px;
+}
+footer a:hover p{
+    color: #6AA84F; 
+}
+
+
+.iconSN{
+    height: 50px;
+    width: 50px;
+    color: #FFFFFF;
+    fill: currentColor;
+}
+
+.BanderaLenguaje{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75px;
+    width: 280px;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+.BanderaLenguaje svg{
+    transition: 0.5s;
+}
+.BanderaLenguaje:hover p{
+    color: #6AA84F; 
+}
+.BanderaLenguaje:hover svg{
+    height: 52.5px;
+    width: 52.5px;
+    transition: 0.5s;
+}
+
+
+.copyright{
+    grid-column: 1/1;
+    grid-row: 2/2;
+    width: 200px;
+}
+
+
+@media only screen and (max-width: 1250px) {
+
+}

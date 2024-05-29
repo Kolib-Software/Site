@@ -46,7 +46,7 @@
 
   @media only screen and (max-width: 1250px) {
     .IndexPage{
-        grid-template-rows: 25px 250px auto 275px 275px 125px;
+        grid-template-rows: 25px 250px auto 200px 200px;
         grid-template-columns: 25px auto 25px;
     }
 
@@ -97,7 +97,7 @@
 
   @media only screen and (max-width: 600px) {
     .IndexPage{
-        grid-template-rows: 25px 120px auto auto auto 65px;
+        grid-template-rows: 25px 120px auto auto auto;
         grid-template-columns: 5px auto 5px;
     }
     dotlottie-player{

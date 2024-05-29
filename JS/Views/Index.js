@@ -1,3 +1,4 @@
+
 async function esloganTecleada(texto, elemento, cursor, velocidad = 200) {
     let i = 0;
     cursor.style.visibility = "";
