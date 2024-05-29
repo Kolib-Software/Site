@@ -1,3 +1,4 @@
+
 async function esloganTecleada(texto, elemento, cursor, velocidad = 200) {
     let i = 0;
     cursor.style.visibility = "";
@@ -88,7 +89,6 @@ function WichAnimation() {
         
         if(ArticuloIndex.children.length == 3){
            ArticuloIndex.insertBefore(animacionAnimada, ArticuloIndex.children[2]);
-           console.log("Escritorio1");
         }
     }
     else{
@@ -98,7 +98,6 @@ function WichAnimation() {
 
         if(ArticuloIndex.children.length == 3){
             ArticuloIndex.insertBefore(animacionDetenida, ArticuloIndex.children[2]);
-            console.log("Movil1");
          }
     }
 }

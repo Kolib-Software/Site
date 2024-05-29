@@ -9,7 +9,7 @@ html {
 
 body{
     display: grid;
-    grid-template-rows: 100px calc(100% - 100px);
+    grid-template-rows: 100px calc(100% - 411px) 311px;
 }
 
 
@@ -92,7 +92,7 @@ main {
 @media only screen and (max-width: 1250px) {
 
     body{
-        grid-template-rows: 145px calc(100% - 145px);
+        grid-template-rows: 145px 1210px auto;
     }
     header {
         grid-template-columns: 25px auto 100px 280px auto 25px;
@@ -125,7 +125,7 @@ main {
 
 @media only screen and (max-width: 600px) {
     body{
-        grid-template-rows: 140px calc(100% - 140px);
+        grid-template-rows: 140px auto auto;
     }
     header {
         grid-template-columns: 25px auto 100px 280px auto 25px;

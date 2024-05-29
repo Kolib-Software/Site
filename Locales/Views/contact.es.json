@@ -3,5 +3,9 @@
     "products": "Productos",
     "about": "Acerca",
     "contact": "Contacto",
-    "policy": "Política"
+    "policy": "Política",
+    "footer_module_socialNetwork": "// Redes Sociales",
+    "footer_module_languages": "// Idiomas",
+    "module_language_EN": "Ingles",
+    "module_language_MEX": "Español"
 }
