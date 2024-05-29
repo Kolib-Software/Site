@@ -89,7 +89,6 @@ function WichAnimation() {
         
         if(ArticuloIndex.children.length == 3){
            ArticuloIndex.insertBefore(animacionAnimada, ArticuloIndex.children[2]);
-           console.log("Escritorio1");
         }
     }
     else{
@@ -99,7 +98,6 @@ function WichAnimation() {
 
         if(ArticuloIndex.children.length == 3){
             ArticuloIndex.insertBefore(animacionDetenida, ArticuloIndex.children[2]);
-            console.log("Movil1");
          }
     }
 }

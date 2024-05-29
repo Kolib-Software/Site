@@ -8,7 +8,7 @@ async function setLocale(locale = null) {
     let source;
     let currentPath = location.pathname;
     if(currentPath === "/"){
-        source = `/Locales/Index.${locale}.json`;
+        source = `/Locales/index.${locale}.json`;
     }
     else{
         source = `/Locales${location.pathname.split(".")[0]}.${locale}.json`;
