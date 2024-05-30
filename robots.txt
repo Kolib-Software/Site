@@ -1,4 +1,4 @@
-ser-agent: Googlebot
+User-agent: Googlebot
 Disallow: /nogooglebot/
 User-agent: *
 Allow: /
