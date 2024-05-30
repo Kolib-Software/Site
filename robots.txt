@@ -1,0 +1,5 @@
+ser-agent: Googlebot
+Disallow: /nogooglebot/
+User-agent: *
+Allow: /
+Sitemap: https://dev.kolibsoftware.com/sitemap.xml
