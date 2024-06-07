@@ -16,8 +16,8 @@ body{
 header {
     grid-row: 1/1;
     display: grid;
-    grid-template-columns: 105px 300px auto 800px;
-    grid-template-rows: auto;
+    grid-template-columns: 105px 420px auto 800px;
+    grid-template-rows: 100px;
 
     border-bottom: 5px solid #6AA84F;
 }
@@ -65,7 +65,13 @@ main {
 
 .TextoLogo {
     color: #6AA84F;
-    font-family: Consolas;
+    font-family: "Sora", sans-serif;
+    font-size: 3rem;
+    margin:auto;
+    padding-left: 10px;
+    transition: border 0.5s; 
+    border-left: 5px solid #6AA84F;
+    border-bottom: 5px solid #6AA84F;
 }
 
 .textoCodigo {
@@ -75,7 +81,7 @@ main {
 
 .textoBasico {
     color: #FFFFFF;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 1.5rem;
 }
 
@@ -95,7 +101,7 @@ main {
         grid-template-rows: 145px 1210px auto;
     }
     header {
-        grid-template-columns: 25px auto 100px 280px auto 25px;
+        grid-template-columns: 25px auto 100px 420px auto 25px;
         grid-template-rows: 60px 75px;
     }
 
@@ -128,7 +134,7 @@ main {
         grid-template-rows: 140px auto auto;
     }
     header {
-        grid-template-columns: 25px auto 100px 280px auto 25px;
+        grid-template-columns: 25px auto 100px 400px auto 25px;
         grid-template-rows: 60px 75px;
     }
     header h1{
