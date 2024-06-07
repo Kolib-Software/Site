@@ -74,6 +74,10 @@ footer a:hover p{
     transition: 0.5s;
 }
 
+.textoCopy{
+    color: #6AA84F;
+    font-family: "Sora", sans-serif;
+}
 
 .copyright{
     grid-column: 1/1;
