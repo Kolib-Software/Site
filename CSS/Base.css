@@ -73,10 +73,6 @@ main {
     border-left: 5px solid #6AA84F;
     border-bottom: 5px solid #6AA84F;
 }
-.textoLogo:hover {
-    border-left: 5px solid #6AA84F;
-    border-bottom: 5px solid #6AA84F;
-}
 
 .textoCodigo {
     color: #6AA84F;
@@ -87,11 +83,6 @@ main {
     color: #FFFFFF;
     font-family: "Sora", sans-serif;
     font-size: 1.5rem;
-}
-
-.textoCopy{
-    color: #6AA84F;
-    font-family: "Sora", sans-serif;
 }
 
 .textoTitulo{
