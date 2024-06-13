@@ -83,6 +83,7 @@ footer a:hover p{
     grid-column: 1/1;
     grid-row: 2/2;
     width: 200px;
+    margin-top: 30px;
 }
 
 
