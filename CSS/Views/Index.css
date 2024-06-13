@@ -1,7 +1,7 @@
 .IndexPage {
     display: grid;
     grid-template-rows: 25px 250px 275px 275px;
-    grid-template-columns: 25px 890px 100px auto auto 25px;
+    grid-template-columns: 5% 890px 100px auto auto 5%;
 }
 
 .IndexSlogan {
@@ -10,7 +10,7 @@
 }
 .IndexAnimation {
     grid-column: 4/6;
-    grid-row: 3/5;
+    grid-row: 2/4;
 }
 
 .IndexTexto01 {
@@ -20,6 +20,10 @@
 .IndexTexto02 {
     grid-column: 2/4;
     grid-row: 4/4;
+}
+
+.IndexTexto01, .IndexTexto02{
+    margin: 0px 15px
 }
 
 .IndexTexto01 h3, .IndexTexto02 h3{
@@ -36,11 +40,16 @@
     margin-bottom: 20px;
 }
 
-
+@media only screen and (max-width: 1720px) {
+    .IndexAnimation {
+        grid-column: 3/6;
+        grid-row: 2/4;
+    }
+  }
 @media only screen and (max-width: 1360px) {
     .IndexAnimation {
         grid-column: 3/6;
-        grid-row: 3/5;
+        grid-row: 2/4;
     }
   }
 
