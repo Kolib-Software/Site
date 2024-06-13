@@ -9,7 +9,7 @@ html {
 
 body{
     display: grid;
-    grid-template-rows: 100px calc(100% - 411px) 311px;
+    grid-template-rows: 110px calc(100% - 411px) 311px;
 }
 
 
@@ -22,8 +22,8 @@ header {
     border-bottom: 5px solid #6AA84F;
 }
 header img{
-    height: 65px;
-    width: 65px;
+    height: 100px;
+    width: 100px;
     margin: auto;
 }
 header h1{
@@ -98,11 +98,11 @@ main {
 @media only screen and (max-width: 1250px) {
 
     body{
-        grid-template-rows: 145px 1210px auto;
+        grid-template-rows: 165px 1210px auto;
     }
     header {
         grid-template-columns: 25px auto 100px 420px auto 25px;
-        grid-template-rows: 60px 75px;
+        grid-template-rows: 90px 75px;
     }
 
     header img{
@@ -139,6 +139,11 @@ main {
     }
     header h1{
         font-size: 2rem;
+    }
+    header img{
+        height: 80px;
+        width: 80px;
+        margin: auto;
     }
     header nav{
         gap: 0px;
