@@ -1,11 +1,11 @@
 {
     "home": "Inicio",
-    "products": "Productos",
+    "software": "Software",
     "about": "Acerca",
     "contact": "Contacto",
     "policy": "Política",
-    "footer_module_socialNetwork": "// Redes Sociales",
-    "footer_module_languages": "// Idiomas",
+    "footer_module_socialNetwork": "Redes Sociales",
+    "footer_module_languages": "Idiomas",
     "module_language_EN": "English",
     "module_language_MEX": "Español"
 }

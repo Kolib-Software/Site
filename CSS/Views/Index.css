@@ -1,6 +1,6 @@
 .IndexPage {
     display: grid;
-    grid-template-rows: 25px 250px 275px 275px;
+    grid-template-rows: 36.520px 250px 275px 275px;
     grid-template-columns: 5% 890px 100px auto auto 5%;
 }
 
