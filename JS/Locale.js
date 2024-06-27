@@ -5,7 +5,7 @@ async function getTranslation(locale = null) {
     let translation = translations[locale];
     if (translation) return translation;
     let path = location.pathname.replace(".html", "");
-    let source = `/Locales${path == "/" ? "/Index" : path}.${locale}.json`;
+    let source = `/Locales${path == "/" ? "/index" : path}.${locale}.json`;
     let response = await fetch(source);
     translation = await response.json();
     translation[locale] = translation;
