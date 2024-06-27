@@ -39,6 +39,10 @@ async function setLocale(locale = null) {
                 element.placeholder = json[options.placeholder];
             if (options.title && json[options.title])
                 element.title = json[options.title];
+            if (options.src && json[options.src])
+                element.src = json[options.src];
+            if (options.srcset && json[options.srcset])
+                element.srcset = json[options.srcset];
         }
     }
 }
