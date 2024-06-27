@@ -33,6 +33,7 @@ async function setLocale(locale = null) {
                     obj[entry[0]] = entry[1];
                     return obj;
                 }, {});
+
             let format = options.format;
             if (options.text && translation[options.text])
                 element.innerText = getFormat(format, translation[options.text]);
@@ -44,6 +45,10 @@ async function setLocale(locale = null) {
                 element.placeholder = getFormat(format, translation[options.placeholder]);
             if (options.title && translation[options.title])
                 element.title = getFormat(format, translation[options.title]);
+            if (options.src && translation[options.src])
+                element.src = getFormat(format, translation[options.src]);
+            if (options.srcset && translation[options.srcset])
+                element.srcset = getFormat(format, translation[options.srcset]);
         }
     }
 }
