@@ -5,7 +5,7 @@
 
     <!-- Info Web -->
 
-    <title>Products - Kolib Software</title>
+    <title>Software - Kolib Software</title>
 
     <meta name="description"
         content="Explore our range of innovative software solutions. From development tools to enterprise applications, Kolib Software has what you need.">
@@ -15,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.png">
-    <link rel="canonical" href="https://dev.kolibsoftware.com/products">
+    <link rel="canonical" href="https://dev.kolibsoftware.com/software">
     <meta name="googlebot" content="all, noarchive, notranslate, max-image-preview:standard">
 
     <!-- CSS -->
@@ -23,20 +23,21 @@
     <link rel="stylesheet" href="../CSS/Base.css">
     <link rel="stylesheet" href="../CSS/Footer.css">
     <link rel="stylesheet" href="../CSS/Complements/ScrollBar.css">
+    <link rel="stylesheet" href="../CSS/Views/Software.css">
 
     <!-- Open Graph Meta tags -->
 
-    <meta property="og:title" content="Products - Kolib Software">
+    <meta property="og:title" content="Software - Kolib Software">
     <meta property="og:description"
         content="Explore our range of innovative software solutions. From development tools to enterprise applications, Kolib Software has what you need.">
     <meta property="og:image" content="https://dev.kolibsoftware.com/assets/Images/LogoHD.png">
-    <meta property="og:url" content="https://dev.kolibsoftware.com/products">
+    <meta property="og:url" content="https://dev.kolibsoftware.com/software">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Tags -->
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Products - Kolib Software">
+    <meta name="twitter:title" content="Software - Kolib Software">
     <meta name="twitter:description"
         content="Explore our range of innovative software solutions. From development tools to enterprise applications, Kolib Software has what you need.">
     <meta name="twitter:image" content="https://dev.kolibsoftware.com/assets/Images/LogoHD.png">
@@ -54,7 +55,7 @@
 
         <nav>
             <a class="textoBasico textoNav" href="../index" data-locale="text=home">Home</a>
-            <a class="textoBasico textoNav navSeleccionado" href="products" data-locale="text=products">Products</a>
+            <a class="textoBasico textoNav navSeleccionado" href="software" data-locale="text=software">software</a>
             <a class="textoBasico textoNav" href="about" data-locale="text=about">About</a>
             <a class="textoBasico textoNav" href="contact" data-locale="text=contact">Contact</a>
             <a class="textoBasico textoNav" href="policy" data-locale="text=policy">Policy</a>
@@ -62,11 +63,152 @@
 
     </header>
     <main>
-        <article class="document">
+        <article class="document softwarePage">
             
-            <h2 class="textoCodigo textoTitulo"> // WIP </h2>
+            <h2 id="h2Software" class="textoCodigo textoTitulo"> // Software </h2>
+
+            <input type="search" id="searchSoftware" class="searchSoftware" placeholder="Search" data-locale="placeholder=search_placeholder"/>
+
+            <div id="sectionCategories" class="sectionCategories">
+
+                <p class="headCategories textoCodigo" data-locale="text=head_categories">Categories</h3>
+                <div id="categorieAll" class="categorieNumbers" data-categorie="All">
+                    <p class="categorie textoCodigoBlanco" data-locale="text=categorie_all">All</p>
+                    <p class="categorie">[0]</p>
+                </div>
+
+                <p class="groupCategorie textoCodigo" data-locale="text=categorie_group_State">State</p>
+                <div id="categorieaReleased" class="categorieNumbers" data-categorie="Released">
+                    <p class="categorie" data-locale="text=categorie_released">Released</h3>
+                    <p class="categorie">[1]</p>
+                </div>
+                <div id="categorieNotReleased" class="categorieNumbers" data-categorie="Not Released">
+                    <p class="categorie" data-locale="text=categorie_notReleased">Not Released</p>
+                    <p class="categorie">[2]</p>
+                </div>
+
+                <p class="groupCategorie" data-locale="text=categorie_group_price">Price</p>
+                <div id="categorieFree" class="categorieNumbers" data-categorie="Free">
+                    <p class="categorie" data-locale="text=categorie_free">Free</h3>
+                    <p class="categorie">[3]</p>
+                </div>
+                <div id="categoriePay" class="categorieNumbers" data-categorie="Pay">
+                    <p class="categorie" data-locale="text=categorie_pay">Pay</p>
+                    <p class="categorie">[4]</p>
+                </div>
+
+                <p class="groupCategorie" data-locale="text=categorie_group_platform">Platform</p>
+                <div id="categorieWindows" class="categorieNumbers" data-categorie="Windows">
+                    <p class="categorie">Windows</h3>
+                    <p class="categorie">[5]</p>
+                </div>
+                <div id="categorieAndroid" class="categorieNumbers" data-categorie="Android">
+                    <p class="categorie">Android</p>
+                    <p class="categorie">[6]</p>
+                </div>
+                <div id="categorieWeb" class="categorieNumbers" data-categorie="Web">
+                    <p class="categorie">Web</p>
+                    <p class="categorie">[7]</p>
+                </div>
+            </div>
+
+            <div id="moduleLatestReleases" class="moduleLatestReleases">
+                <h3 class="textoCodigo" data-locale="text=moduleLatestReleases_h3">Latest Releases</h3>
+                <div id="LatestRelease01" class="LatestRelease01">
+                    <img id="bannerLatestRelease01" class="bannerProject" alt="Imagen del proyecto"/>
+                    <div class="infoLastestRelease01">
+                        <h4 class="textoCodigo" data-software="Ranchito">Name</h4>
+                        <p class="textoBasico">description</p>
+                        <div class="principalOptionsDownload">
+                            <a target="_blank"> 
+                                <img data-locale="srcset=bandage_GooglePlay" alt="Playstore"/>    
+                            </a>
+                            <a target="_blank">
+                                <img data-locale="srcset=bandage_APK" alt="APK"/> 
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="moduleSoftware" class="moduleSoftware">
+                <div class="softwareRight">
+                    <img id="bannerSoftware" alt="Banner"/>
+                    <div id="dataSoftware" class="dataSoftware">
+                        <div class="correctData">
+                            <p class="textoBasico">Release Date:</p>
+                            <p class="textoBasico">Release Date</p>
+                        </div>
+                        <div class="correctData">
+                            <p class="textoBasico">Platform:</p>
+                            <p class="textoBasico">Platform</p>
+                        </div>
+                        <div class="correctData">
+                            <p class="textoBasico">Architecture:</p>
+                            <p class="textoBasico">Platform</p>
+                        </div>
+                    </div>
+                    <div id="downloadSoftware" class="downloadSoftware">
+                        <h3 class="textoCodigo">Download</h3>
+                        <p class="textoBasico">Latest Version</p>
+                        <div class="downloadOptions">
+                            <a target="_blank"> 
+                                <img data-locale="srcset=bandage_GooglePlay" alt="Playstore"/>    
+                            </a>
+                            <a target="_blank">
+                                <img data-locale="srcset=bandage_APK" alt="APK"/> 
+                            </a>
+                        </div>
+                        <h3 class="textoCodigo">Previous versions</h3>
+                        
+                    </div>
+                </div>
+                <div class="softwareLeft">
+                    <p id="descriptionSoftware" class="descriptionSoftware textoBasico">Description</p>
+                    <div id="changelogSoftware" class="changelogSoftware">
+                        <h3 class="textoCodigo">Changelog</h3>
+                    </div>
+                </div>
+            </div>
+
+            <template id="changeLogVersion" class="changeLogVersion">
+                <p class="textoCodigo versionText">X.Xa</p>
+                <p class="textoBasico">descripcion blabla bla</p>
+            </template>
+
+            <template id="previousVersion" class="previousVersion">
+                <p class="textoCodigo">Version X.Xa</p>
+                <a target="_blank">
+                    <img data-locale="srcset=bandage_APK" alt="APK"/> 
+                </a>
+            </template>
+
+            <div id="moduleListsoftware" class="moduleListsoftware">
+                <h3 class="textoCodigo">Title</h3>
+                
+            </div>
+
+            <template id="SoftwareListTemplate" class="SoftwareListTemplate">
+                <div class="softwareMini">
+                    <img alt="Project Banner"/>
+                    <div class="softwareInfoMini">
+                        <h4 class="textoBasico">Project Name</h4>
+                        <p class="textoBasico"> Project description</p>
+                        <div class="catefogioresOfSoftware">
+                            <p class="textoCodigo">[State]</p>
+                            <p class="textoCodigo">[Price]</p>
+                            <p class="textoCodigo">[Platform]</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </template>
             
         </article>
+
+        <script src="../JS/Views/software.js" type="module"></script>
+
     </main>
 
     <footer>

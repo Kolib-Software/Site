@@ -84,6 +84,11 @@ main {
     font-family: "Sora", sans-serif;
     font-size: 1.5rem;
 }
+.headText {
+    color: #6AA84F;
+    font-family: "Sora", sans-serif;
+    font-size: 1.75rem;
+}
 
 .textoTitulo{
     font-size: 2.75rem;

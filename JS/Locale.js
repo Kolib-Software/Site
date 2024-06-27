@@ -1,22 +1,26 @@
-if (!localStorage.locale)
-    localStorage.locale = navigator.language.split("-")[0];
+const translations = {};
+
+async function getTranslation(locale = null) {
+    locale ??= localStorage.locale;
+    let translation = translations[locale];
+    if (translation) return translation;
+    let path = location.pathname.replace(".html", "");
+    let source = `/Locales${path == "/" ? "/Index" : path}.${locale}.json`;
+    let response = await fetch(source);
+    translation = await response.json();
+    translation[locale] = translation;
+    return translation
+}
+
+function getFormat(format, value) {
+    return format?.length ? format.replace("{0}", value) : value
+}
 
 async function setLocale(locale = null) {
     locale ??= localStorage.locale;
     localStorage.locale = locale;
 
-    let source;
-    let currentPath = location.pathname;
-    if(currentPath === "/"){
-        source = `/Locales/index.${locale}.json`;
-    }
-    else{
-        source = `/Locales${location.pathname.split(".")[0]}.${locale}.json`;
-    }
-
-    
-    let response = await fetch(source);
-    let json = await response.json();
+    let translation = await getTranslation(locale);
 
     let elements = document.querySelectorAll("[data-locale]");
     for (let element of elements) {
@@ -29,22 +33,32 @@ async function setLocale(locale = null) {
                     obj[entry[0]] = entry[1];
                     return obj;
                 }, {});
-            if (options.text && json[options.text])
-                element.innerText = json[options.text];
-            if (options.html && json[options.html])
-                element.innerHTML = json[options.html];
-            if (options.value && json[options.value])
-                element.value = json[options.value];
-            if (options.placeholder && json[options.placeholder])
-                element.placeholder = json[options.placeholder];
-            if (options.title && json[options.title])
-                element.title = json[options.title];
+
+            let format = options.format;
+            if (options.text && translation[options.text])
+                element.innerText = getFormat(format, translation[options.text]);
+            if (options.html && translation[options.html])
+                element.innerHTML = getFormat(format, translation[options.html]);
+            if (options.value && translation[options.value])
+                element.value = getFormat(format, translation[options.value]);
+            if (options.placeholder && translation[options.placeholder])
+                element.placeholder = getFormat(format, translation[options.placeholder]);
+            if (options.title && translation[options.title])
+                element.title = getFormat(format, translation[options.title]);
+            if (options.src && translation[options.src])
+                element.src = getFormat(format, translation[options.src]);
+            if (options.srcset && translation[options.srcset])
+                element.srcset = getFormat(format, translation[options.srcset]);
         }
     }
 }
 
-setLocale();
-
 export {
+    getTranslation,
     setLocale
 }
+
+if (!localStorage.locale)
+    localStorage.locale = navigator.language.split("-")[0];
+
+setLocale();
