@@ -16,19 +16,19 @@
       "platform": "Android"
     },
     "version": {
-      "latest_version"    : {"version": "1.0", "apk": "https://i.ytimg.com/vi/8VFepDvHcws/maxresdefault.jpg", "playstore": "https://play.google.com/store/apps/details?id=com.llc3909.papersplease"},
+      "latest_version"    : {"version": "1.1.1", "apk": "../Downloads/Ranchito/v1.1.1/org.kolibsoftware.ranchito.apk", "playstore": "https://play.google.com/store/apps/details?id=com.llc3909.papersplease"},
       "previous_versions": [
         {
+          "version": "1.0.0", 
+          "apk": ""
+        },
+        {
           "version": "0.9", 
-          "apk": "https://images3.memedroid.com/images/UPLOADED225/5aa304928aeda.jpeg"
+          "apk": ""
         },
         {
           "version": "0.8", 
-          "apk": "https://images3.memedroid.com/images/UPLOADED225/5aa304928aeda.jpeg"
-        },
-        {
-          "version": "0.7", 
-          "apk": "https://images3.memedroid.com/images/UPLOADED225/5aa304928aeda.jpeg"
+          "apk": ""
         }
       ]
     },
