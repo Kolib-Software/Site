@@ -243,3 +243,65 @@
     transform: scale(1.10);
     transition: 0.1s;
 }
+
+@media only screen and (max-width: 1250px) { 
+    .LatestRelease01{
+        grid-template-rows: 360px;
+        grid-template-columns: auto;
+    }
+    .LatestRelease01 h4{
+        grid-column: 2/2;
+        cursor: pointer;
+        width: auto;
+    }
+    .LatestRelease01 .bannerProject{
+        grid-column: 1/1;
+        grid-row: 1/1;
+        height: 357px;
+        width: 500px;
+        cursor: pointer;
+        justify-self: center;
+    }
+    .infoLastestRelease01{
+        grid-column: 1/1;
+        grid-row: 2/2; 
+    }
+
+    .softwareMini{
+        grid-template-columns: auto;
+        grid-template-rows: 380px auto;
+    }
+    .softwareMini img{
+        height:365px;
+        width: 500px;
+    }
+    
+
+    .moduleSoftware{
+        grid-template-columns: 460px auto;
+    }
+    .moduleSoftware img:not(a img){
+        height: 329px;
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+    .softwarePage{
+        grid-template-columns: 2.5% 280px auto 300px 2.5%;
+    }
+
+
+    .moduleSoftware{
+        grid-template-columns: 410px auto;
+    }
+    .moduleSoftware img:not(a img){
+        height: 292px;
+        width: 400px;
+    }
+    .downloadOptions img{
+        width: 185px;
+        height: 61px;
+    }
+ }
+
