@@ -103,7 +103,7 @@ main {
 @media only screen and (max-width: 1250px) {
 
     body{
-        grid-template-rows: 165px 1210px auto;
+        grid-template-rows: 165px auto auto;
     }
     header {
         grid-template-columns: 25px auto 100px 420px auto 25px;
