@@ -23,15 +23,11 @@
 }
 
 .IndexTexto01, .IndexTexto02{
-    margin: 0px 15px
+    margin: 0px 15px 25px 15px;
 }
 
 .IndexTexto01 h3, .IndexTexto02 h3{
     font-size: 2rem;
-}
-
-.IndexTexto01 p, .IndexTexto02 p{
-    font-size: 1.25rem;
 }
 
 .textoSlogan {
@@ -45,18 +41,23 @@
         grid-column: 3/6;
         grid-row: 2/4;
     }
-  }
-@media only screen and (max-width: 1360px) {
-    .IndexAnimation {
-        grid-column: 3/6;
-        grid-row: 2/4;
+    .IndexSlogan{
+        grid-column: 2 / 2;
     }
-  }
+    .IndexSlogan div{
+       
+    }
+}
+@media only screen and (max-width: 700px) {
+    .textoSlogan{
+        font-size: 2.15rem;
+    }
+}
 
-  @media only screen and (max-width: 1250px) {
+  @media only screen and (max-width: 1325px) {
     .IndexPage{
-        grid-template-rows: 25px 250px auto 200px 200px;
-        grid-template-columns: 25px auto 25px;
+        grid-template-rows: 25px auto auto auto auto;
+        grid-template-columns: 15px auto 15px;
     }
 
     .IndexAnimation {
@@ -82,45 +83,23 @@
         font-size: 1.95rem;
     }
     
-    .IndexTexto01 p, .IndexTexto02 p{
-        font-size: 1.15rem;
-    }
-    
   }
 
-  @media only screen and (max-width: 990px) {
-    .IndexTexto01 h3, .IndexTexto02 h3{
-        font-size: 1.75rem;
-    }
-    
-    .IndexTexto01 p, .IndexTexto02 p{
-        font-size: 1.05rem;
-    }
-  }
-
-  @media only screen and (max-width: 820px) {
-    .textoSlogan{
-        font-size: 2rem;
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 620px) {
     .IndexPage{
         grid-template-rows: 25px 120px auto auto auto;
         grid-template-columns: 5px auto 5px;
     }
     dotlottie-player{
-        height: 300px;
-        width: 300px;
+        height: 400px;
+        min-height: 300px;
+        width: 400px;
+        min-width: 300px;
     }
     .textoSlogan{
-        font-size: 1.70rem;
+        font-size: 1.85rem;
     }
-    .IndexTexto01 h3, .IndexTexto02 h3{
-        font-size: 1.10rem;
-    }
-    
     .IndexTexto01 p, .IndexTexto02 p{
-        font-size: 0.85rem;
+        margin-bottom: 25px;
     }
   }

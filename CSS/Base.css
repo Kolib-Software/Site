@@ -16,19 +16,25 @@ body{
 header {
     grid-row: 1/1;
     display: grid;
-    grid-template-columns: 105px 420px auto 800px;
+    grid-template-columns: auto auto auto 800px;
     grid-template-rows: 100px;
 
     border-bottom: 5px solid #6AA84F;
 }
+header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
 header img{
     height: 100px;
     width: 100px;
-    margin: auto;
 }
 header h1{
     justify-self: center;
     font-weight: 600;
+    margin-left: 15px;
 }
 
 header nav{
@@ -67,7 +73,6 @@ main {
     color: #6AA84F;
     font-family: "Sora", sans-serif;
     font-size: 3rem;
-    margin:auto;
     padding-left: 10px;
     transition: border 0.5s; 
     border-left: 5px solid #6AA84F;
@@ -100,61 +105,51 @@ main {
 }
 
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1325px) {
 
     body{
         grid-template-rows: 175px auto auto;
     }
     header {
-        grid-template-columns: 25px auto 100px 420px auto 25px;
+        grid-template-columns: 5px auto 5px;
         grid-template-rows: 95px 75px;
     }
-
-    header img{
-        grid-column: 3/3;
-        grid-row: 1/1;
+    header div{
+        grid-column: 2/2;
+        justify-content: center;
     }
-    header h1{
-        grid-column: 4/4;
-        grid-row: 1/1;
+    .TextoLogo{
         font-size: 2rem;
         margin-top: 0px;
         margin-bottom: 0px;
         align-content: center;
     }
     header nav{
-        grid-column: 1/7;
+        grid-column: 2/2;
         grid-row: 2/2;
     }
-    .textoNav {
-        text-decoration: none;
-        font-size: 1.5rem;
-    }
-
 
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 740px) {
     body{
-        grid-template-rows: 140px auto auto;
-    }
-    header {
-        grid-template-columns: 25px auto 100px 400px auto 25px;
-        grid-template-rows: 60px 75px;
-    }
-    header h1{
-        font-size: 2rem;
-    }
-    header img{
-        height: 80px;
-        width: 80px;
-        margin: auto;
+        grid-template-rows: 250px auto auto;
     }
     header nav{
-        gap: 0px;
+        flex-wrap: wrap;
     }
-    .textoNav {
-        font-size: 1.25rem;
+    .textoNav{
+        font-size: 1.65rem;
+        margin-top: 10px;
     }
+    .textoNav{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 620px) {
+    
+    
 }
 
