@@ -131,7 +131,7 @@ main {
     }
 
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width:980px) {
     body{
         grid-template-rows: 250px auto auto;
     }
@@ -140,6 +140,7 @@ main {
     }
     .textoNav{
         margin-top: 10px;
+        font-size: 5rem;
     }
     .textoNav{
         margin-right: 15px;
