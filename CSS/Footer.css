@@ -20,7 +20,7 @@ footer{
 }
 
 footer .textoCodigo{
-    font-size: 32px;
+    font-size: 3rem;
 }
 
 footer a{
@@ -72,17 +72,14 @@ footer a:hover p{
     width: 52.5px;
     transition: 0.5s;
 }
-
-.textoCopy{
+.copyright{
     color: #6AA84F;
     font-family: "Sora", sans-serif;
-}
-
-.copyright{
     grid-column: 1/1;
     grid-row: 2/2;
-    width: 200px;
+    width: 250px;
     margin-top: 30px;
+    font-size: 2rem;
 }
 
 

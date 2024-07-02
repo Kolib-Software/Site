@@ -27,11 +27,11 @@
 }
 
 .IndexTexto01 h3, .IndexTexto02 h3{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .textoSlogan {
-    font-size: 2.75rem;
+    font-size: 5rem;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -48,13 +48,8 @@
        
     }
 }
-@media only screen and (max-width: 700px) {
-    .textoSlogan{
-        font-size: 2.15rem;
-    }
-}
 
-  @media only screen and (max-width: 1325px) {
+@media only screen and (max-width: 1325px) {
     .IndexPage{
         grid-template-rows: 25px auto auto auto auto;
         grid-template-columns: 15px auto 15px;
@@ -78,12 +73,8 @@
         grid-column: 2/2;
         grid-row: 5/5;
     }
-
-    .IndexTexto01 h3, .IndexTexto02 h3{
-        font-size: 1.95rem;
-    }
     
-  }
+}
 
   @media only screen and (max-width: 620px) {
     .IndexPage{
