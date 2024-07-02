@@ -76,6 +76,8 @@ async function escribirEslogans() {
 
 escribirEslogans();
 
+let widthDispositivo = document.getElementById("widthDispositivo");
+
 function WichAnimation() {
     var width = window.innerWidth;
 
@@ -97,6 +99,8 @@ function WichAnimation() {
             ArticuloIndex.insertBefore(animacionDetenida, ArticuloIndex.children[2]);
          }
     }
+
+    widthDispositivo.innerText = width + "px";
 }
 
 WichAnimation();
