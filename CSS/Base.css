@@ -4,6 +4,7 @@ html {
     background-color: #1C1C1C;
     margin: 0px;
     padding: 0px;
+    font-size: 62.5%; 
 }
 
 
@@ -72,7 +73,7 @@ main {
 .TextoLogo {
     color: #6AA84F;
     font-family: "Sora", sans-serif;
-    font-size: 3rem;
+    font-size: 5rem;
     padding-left: 10px;
     transition: border 0.5s; 
     border-left: 5px solid #6AA84F;
@@ -87,7 +88,8 @@ main {
 .textoBasico {
     color: #FFFFFF;
     font-family: "Sora", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.25rem;
+    line-height: 3.25rem;
 }
 .headText {
     color: #6AA84F;
@@ -101,7 +103,7 @@ main {
 
 .textoNav {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 
@@ -119,7 +121,6 @@ main {
         justify-content: center;
     }
     .TextoLogo{
-        font-size: 2rem;
         margin-top: 0px;
         margin-bottom: 0px;
         align-content: center;
@@ -130,7 +131,7 @@ main {
     }
 
 }
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 980px) {
     body{
         grid-template-rows: 250px auto auto;
     }
@@ -138,8 +139,8 @@ main {
         flex-wrap: wrap;
     }
     .textoNav{
-        font-size: 1.65rem;
         margin-top: 10px;
+        font-size: 5rem;
     }
     .textoNav{
         margin-right: 15px;
