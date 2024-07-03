@@ -44,9 +44,6 @@
     .IndexSlogan{
         grid-column: 2 / 2;
     }
-    .IndexSlogan div{
-       
-    }
 }
 
 @media only screen and (max-width: 1325px) {
@@ -76,19 +73,9 @@
     
 }
 
-  @media only screen and (max-width: 620px) {
-    .IndexPage{
-        grid-template-rows: 25px 120px auto auto auto;
-        grid-template-columns: 5px auto 5px;
-    }
-    dotlottie-player{
-        height: 400px;
-        min-height: 300px;
-        width: 400px;
-        min-width: 300px;
-    }
+  @media only screen and (max-width: 980px) {
     .textoSlogan{
-        font-size: 1.85rem;
+        font-size: 6rem;
     }
     .IndexTexto01 p, .IndexTexto02 p{
         margin-bottom: 25px;
