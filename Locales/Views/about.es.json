@@ -8,7 +8,7 @@
     "footer_module_languages": "Idiomas",
     "module_language_EN": "English",
     "module_language_MEX": "Español",
-    "texto01_titulo": "// Sobre nosotros y servicios",
+    "texto01_titulo": "Sobre nosotros y servicios",
     "texto01": "En <b>Kolib Software</b>, somos una empresa innovadora y apasionada por la tecnología, dedicada a la creación de soluciones de software que impulsan el éxito de nuestros clientes. Con un enfoque en la plataforma .NET, nuestro equipo de expertos diseña y desarrolla aplicaciones robustas y de alto rendimiento para una variedad de necesidades y plataformas.",
     "texto02": "<b>Software de Escritorio</b>: Utilizando WPF y WinUI3, construimos interfaces de usuario ricas e interactivas que son tanto funcionales como estéticamente agradables, asegurando una experiencia de usuario fluida y coherente.",
     "texto03": "<b>Desarrollo Móvil</b>: A través de Xamarin y .NET MAUI, ofrecemos aplicaciones móviles multiplataforma que entregan rendimiento y fiabilidad, permitiendo a los usuarios acceder a nuestras soluciones en cualquier momento y lugar.",
