@@ -133,7 +133,10 @@ main {
 }
 @media only screen and (max-width:980px) {
     body{
-        grid-template-rows: 250px auto auto;
+        grid-template-rows: 280px auto auto;
+    }
+    header {
+        grid-template-rows: 95px 180px;
     }
     header nav{
         flex-wrap: wrap;
