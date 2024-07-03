@@ -464,3 +464,69 @@ function asignEventforSoftware(){
         });
     });
 }
+
+// =============================
+// || Mobile
+// =============================
+
+const headCategories = document.getElementById("headCategories");
+
+let categorieAll = document.getElementById("categorieAll");
+let groupState = document.getElementById("groupState");
+let categorieaReleased = document.getElementById("categorieaReleased");
+let categorieNotReleased = document.getElementById("categorieNotReleased");
+let groupPrice = document.getElementById("groupPrice");
+let categorieFree = document.getElementById("categorieFree");
+let categoriePay = document.getElementById("categoriePay");
+let groupPlatform = document.getElementById("groupPlatform");
+let categorieWindows = document.getElementById("categorieWindows");
+let categorieAndroid = document.getElementById("categorieAndroid");
+let categorieWeb = document.getElementById("categorieWeb");
+
+let isHidden = false;
+
+headCategories.addEventListener("click", () => {
+    categoriaMovil();
+});
+
+function categoriaMovil(){
+    if(isHidden === false) {
+        categorieAll.style.display = "none";
+        groupState.style.display = "none";
+        categorieaReleased.style.display = "none";
+        categorieNotReleased.style.display = "none";
+        groupPrice.style.display = "none";
+        categorieFree.style.display = "none";
+        categoriePay.style.display = "none";
+        groupPlatform.style.display = "none";
+        categorieWindows.style.display = "none";
+        categorieAndroid.style.display = "none";
+        categorieWeb.style.display = "none";
+
+        sectionCategories.style.borderRight = "none";
+        isHidden = true;
+
+    }
+    else{
+        categorieAll.style.display = "flex";
+        groupState.style.display = "block";
+        categorieaReleased.style.display = "flex";
+        categorieNotReleased.style.display = "flex";
+        groupPrice.style.display = "block";
+        categorieFree.style.display = "flex";
+        categoriePay.style.display = "flex";
+        groupPlatform.style.display = "block";
+        categorieWindows.style.display = "flex";
+        categorieAndroid.style.display = "flex";
+        categorieWeb.style.display = "flex"; 
+
+        sectionCategories.style.borderRight = "5px solid #6AA84F";
+        isHidden = false;
+    }
+}
+
+let widthDispositivo = window.innerWidth;
+
+if(widthDispositivo == "980"){
+    categoriaMovil();
+}
