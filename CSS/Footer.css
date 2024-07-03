@@ -1,9 +1,8 @@
 footer{
     border-top: 5px solid #6AA84F;
     
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto 55px;
+    display: flex;
+    flex-direction: column;
 }
 
 .contenedorModulos{
@@ -14,13 +13,14 @@ footer{
 .contenedorModulos div:not(.BanderaLenguaje){
     max-width: 460px;
     min-width: 350px;
-    max-height: 350px;
+    max-height: 380px;
     min-height: 250px;
     margin-left: 5px;
 }
 
 footer .textoCodigo{
     font-size: 3rem;
+    margin-bottom: 15px;
 }
 
 footer a{
@@ -85,7 +85,7 @@ footer a:hover p{
 
 @media only screen and (max-width: 980px) {
     footer .textoCodigo{
-        font-size: 4rem;
+        font-size: 5rem;
     }
     footer a, .BanderaLenguaje{
         height: 125px;
