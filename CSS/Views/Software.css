@@ -1,6 +1,6 @@
 .softwarePage{
     display: grid;
-    grid-template-columns: 5% 300px auto 314px 5%;
+    grid-template-columns: 2.5% 300px auto 314px 2.5%;
     grid-template-rows: 80px auto 50px ;
 }
 .softwarePage h2{
@@ -29,18 +29,18 @@
     padding: 10px 0px 10px 0px;
     margin: 5px 0px;
     text-align-last: center;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 .categorie{
     color: #FFFFFF;
     font-family: Consolas;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin: 10px 0px;
 }
 .groupCategorie{
     color: #6AA84F;
     font-family: Consolas;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     border-bottom: 5px solid #6AA84F;
     border-left: 5px solid #6AA84F;
     margin: 10px 0px;
@@ -72,7 +72,7 @@
     padding-left: 25px;
 }
 .moduleLatestReleases h3{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .moduleSoftware{
@@ -105,7 +105,7 @@
 }
 .downloadSoftware h3{
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .downloadSoftware p{
     margin: 10px 0px;
@@ -133,10 +133,10 @@
 
 }
 .changelogSoftware h3{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .versionText{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .moduleListsoftware{
@@ -167,7 +167,7 @@
     flex-direction: column;
 }
 .softwareInfoMini h4{
-    font-size: 1.65rem;
+    font-size: 3rem;
     margin: 5px 0px;
 }
 .softwareInfoMini p{
@@ -201,6 +201,7 @@
     grid-column: 2/2;
     cursor: pointer;
     width: auto;
+    font-size: 2.75rem !important;
 }
 .LatestRelease01 .bannerProject{
     grid-column: 1/1;
@@ -231,7 +232,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 230px;
     border-top: 5px solid #6AA84F;
 }
 .principalOptionsDownload img{
@@ -244,11 +245,7 @@
     transition: 0.1s;
 }
 
-@media only screen and (max-width: 1250px) { 
-    .softwarePage{
-        grid-template-columns: 5% 245px auto 310px 5%;
-    }
-
+@media only screen and (max-width: 980px) { 
 
     .moduleLatestReleases{
         padding-left: 10px;
@@ -283,7 +280,6 @@
         height:365px;
         width: 500px;
     }
-    
 
     .moduleSoftware{
         grid-template-columns: 460px auto;
@@ -292,24 +288,77 @@
         height: 329px;
         width: 450px;
     }
-}
 
-@media only screen and (max-width: 885px) {
+
     .softwarePage{
-        grid-template-columns: 2.5% 245px auto 310px 2.5%;
+        grid-template-rows: 100px auto auto 50px;
+        grid-template-columns: 5% auto 400px 5%;
     }
-
-
-    .moduleSoftware{
-        grid-template-columns: 410px auto;
+    .softwarePage h2 {
+        grid-column: 2/2;
+        grid-row: 1/1;
     }
-    .moduleSoftware img:not(a img){
-        height: 292px;
+    .searchSoftware{
+        grid-column: 3/3;
+        grid-row: 1/1;
         width: 400px;
+        height: 60px;
+        font-size: 2.5rem;
     }
-    .downloadOptions img{
-        width: 185px;
-        height: 61px;
+    .sectionCategories{
+        grid-column: 2/4;
+        grid-row: 2/2;
+        border-right: none;
     }
- }
+    .headCategories{
+        border: none;
+    }
+    .groupCategorie {
+        font-size: 3rem;
+    }
+    .categorie{
+        font-size: 3rem;
+    }
+    .moduleLatestReleases, .moduleSoftware, .moduleListsoftware{
+        grid-column: 2/4;
+        grid-row: 3/3;
+    }
+
+    .moduleLatestReleases h3{
+        font-size: 4rem;
+    }
+
+    .principalOptionsDownload img{
+        width: 320px;
+        height: 106px;
+    }
+
+    .softwareMini h4{
+        font-size: 3.5rem;
+    }
+    .catefogioresOfSoftware p{
+        font-size: 3rem;
+    }
+
+
+    .downloadSoftware h3{
+        font-size: 4rem;
+    }
+    .downloadSoftware .downloadOptions{
+        flex-direction: column;
+    }
+    .downloadSoftware .downloadOptions a{
+        margin-bottom: 20px;
+    }
+    .downloadSoftware .downloadOptions img{
+        width: 320px;
+        height: 106px;
+    }
+    .changelogSoftware h3{
+        font-size: 4rem;
+    }
+    .versionText{
+        font-size: 3rem;
+    }
+}
 
