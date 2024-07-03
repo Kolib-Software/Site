@@ -88,8 +88,8 @@ main {
 .textoBasico {
     color: #FFFFFF;
     font-family: "Sora", sans-serif;
-    font-size: 2.25rem;
-    line-height: 3.25rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
 }
 .headText {
     color: #6AA84F;
@@ -98,7 +98,7 @@ main {
 }
 
 .textoTitulo{
-    font-size: 2.75rem;
+    font-size: 5rem;
 }
 
 .textoNav {
@@ -143,17 +143,14 @@ main {
     }
     .textoNav{
         margin-top: 10px;
-        font-size: 5rem;
+        font-size: 6rem;
     }
     .textoNav{
         margin-right: 15px;
         margin-left: 15px;
     }
-}
-
-
-@media only screen and (max-width: 620px) {
-    
-    
+    .textoTitulo{
+        font-size: 7rem;
+    }
 }
 
