@@ -148,7 +148,7 @@
     padding-left: 25px;
 }
 .moduleListsoftware h3{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .softwareMini{
     display: grid;
@@ -178,7 +178,7 @@
     flex-direction: row;
 }
 .catefogioresOfSoftware p{
-    font-size: 1.25rem;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     margin-right: 10px;
@@ -282,11 +282,13 @@
     }
 
     .moduleSoftware{
-        grid-template-columns: 460px auto;
+        grid-template-columns: auto;
     }
     .moduleSoftware img:not(a img){
-        height: 329px;
-        width: 450px;
+        height: 440px;
+        width: 600px;
+        margin-bottom: 35px;
+        align-self: center;
     }
 
 
@@ -303,7 +305,7 @@
         grid-row: 1/1;
         width: 400px;
         height: 60px;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     .sectionCategories{
         grid-column: 2/4;
@@ -340,12 +342,25 @@
         font-size: 3rem;
     }
 
+    .moduleListsoftware h3{
+        font-size: 4rem;
+    }
+
+    
+    .softwareLeft{
+        grid-row: 1/1;
+    }
+    .softwareRight{
+        grid-row: 2/2;
+        display: flex;
+        flex-direction: column;
+    }
 
     .downloadSoftware h3{
         font-size: 4rem;
     }
     .downloadSoftware .downloadOptions{
-        flex-direction: column;
+        margin-top: 35px;
     }
     .downloadSoftware .downloadOptions a{
         margin-bottom: 20px;
@@ -353,6 +368,9 @@
     .downloadSoftware .downloadOptions img{
         width: 320px;
         height: 106px;
+    }
+    .changelogSoftware {
+        display: none;
     }
     .changelogSoftware h3{
         font-size: 4rem;
