@@ -20,4 +20,5 @@
 .textoVertical p{
     text-align: justify;
     text-justify: inter-character;
+    margin-bottom: 75px;
 }
