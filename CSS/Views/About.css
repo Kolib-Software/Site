@@ -28,9 +28,9 @@
     grid-row: 3/3;
 }
 
-@media only screen and (max-width: 1062px) {
+@media only screen and (max-width: 980px) {
     .aboutPage{
-        grid-template-rows: 150px auto auto auto 50px ;
+        grid-template-rows: 240px auto auto auto 50px ;
     }
     .aboutPage p:not(.textoVertical){
         grid-column: 2/4;
@@ -46,13 +46,5 @@
     .textoVertical{
         grid-column: 2/4;
         grid-row: 4/4;
-    }
-}
-@media only screen and (max-width: 480px) {
-    .aboutPage{
-        grid-template-rows: 100px auto auto auto 50px ;
-    }
-    .aboutPage h2{
-        font-size: 1.70rem;
     }
 }
