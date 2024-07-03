@@ -9,32 +9,27 @@
 
 <url>
   <loc>https://dev.kolibsoftware.com/</loc>
-  <lastmod>2024-06-07T14:52:31+00:00</lastmod>
+  <lastmod>2024-07-03T14:50:01+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://dev.kolibsoftware.com/index</loc>
-  <lastmod>2024-06-07T14:52:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dev.kolibsoftware.com/Views/products</loc>
-  <lastmod>2024-06-07T14:52:31+00:00</lastmod>
+  <loc>https://dev.kolibsoftware.com/Views/software</loc>
+  <lastmod>2024-07-03T14:50:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dev.kolibsoftware.com/Views/about</loc>
-  <lastmod>2024-06-07T14:52:31+00:00</lastmod>
+  <lastmod>2024-07-03T14:50:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dev.kolibsoftware.com/Views/contact</loc>
-  <lastmod>2024-06-07T14:52:31+00:00</lastmod>
+  <lastmod>2024-07-03T14:50:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dev.kolibsoftware.com/Views/policy</loc>
-  <lastmod>2024-06-07T14:52:31+00:00</lastmod>
+  <lastmod>2024-07-03T14:50:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
