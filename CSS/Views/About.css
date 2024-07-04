@@ -21,7 +21,7 @@
     grid-column: 3/3;
     grid-row: 2/2;
     align-self: center;
-    margin: 30px 15px;
+    margin: 40px 15px;
 }
 .textoVertical{
     grid-column: 2/4;

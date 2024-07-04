@@ -125,6 +125,7 @@ main {
         margin-top: 0px;
         margin-bottom: 0px;
         align-content: center;
+        font-size: 8rem;
     }
     header nav{
         grid-column: 2/2;
@@ -134,10 +135,14 @@ main {
 }
 @media only screen and (max-width:980px) {
     body{
-        grid-template-rows: 280px auto auto;
+        grid-template-rows: 330px auto auto;
     }
     header {
-        grid-template-rows: 95px 180px;
+        grid-template-rows: 140px 180px;
+    }
+    header img{
+        width: 120px;
+        height: 120px;
     }
     header nav{
         flex-wrap: wrap;
