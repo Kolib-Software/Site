@@ -1,6 +1,6 @@
 .IndexPage {
     display: grid;
-    grid-template-rows: 36.520px 250px 275px 275px;
+    grid-template-rows: 36.520px 260px 360px 330px;
     grid-template-columns: 5% 890px 100px auto auto 5%;
 }
 
@@ -76,6 +76,9 @@
   @media only screen and (max-width: 980px) {
     .textoSlogan{
         font-size: 7rem;
+    }
+    .IndexTexto01 h3, .IndexTexto02 h3 {
+        font-size: 4rem;
     }
     .IndexTexto01 p, .IndexTexto02 p{
         margin-bottom: 25px;

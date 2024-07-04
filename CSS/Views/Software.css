@@ -165,12 +165,15 @@
 .softwareInfoMini{
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
 }
 .softwareMini:not(:hover){
     transition: 1s;
 }
 .softwareMini:hover{
     padding-left: 15px;
+    background-color: #1C1C1C;
+    background-color: rgba(107, 104, 104, 0.1); 
     transition: 1s;
 }
 .softwareInfoMini h4{
@@ -185,7 +188,7 @@
     flex-direction: row;
 }
 .catefogioresOfSoftware p{
-    font-size: 2.5rem;
+    font-size: 2.65rem;
     display: flex;
     justify-content: center;
     margin-right: 10px;
@@ -208,7 +211,7 @@
     grid-column: 2/2;
     cursor: pointer;
     width: auto;
-    font-size: 2.75rem !important;
+    font-size: 3rem;
 }
 .LatestRelease01 .bannerProject{
     grid-column: 1/1;
@@ -228,7 +231,6 @@
 }
 .infoLastestRelease01 h4{
     color: #FFFFFF;
-    font-size: 1.75rem;
     font-family: "Sora", sans-serif;
     margin: 10px 0px;
 }
@@ -317,6 +319,7 @@
         grid-column: 2/2;
         cursor: pointer;
         width: auto;
+        font-size: 4rem;
     }
     .LatestRelease01 .bannerProject{
         grid-column: 1/1;
@@ -333,11 +336,14 @@
 
     .softwareMini{
         grid-template-columns: auto;
-        grid-template-rows: 380px auto;
+        grid-template-rows: 450px auto;
     }
     .softwareMini img{
-        height:365px;
-        width: 500px;
+        height: 438px;
+        width: 600px;
+    }
+    .softwareMini:hover{
+        padding-left: 0px;
     }
 
     .moduleSoftware{
@@ -373,6 +379,7 @@
     }
     .headCategories{
         border: none;
+        font-size: 5rem;
     }
     .groupCategorie {
         font-size: 3rem;
@@ -402,7 +409,7 @@
     }
 
     .moduleListsoftware h3{
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     
@@ -414,19 +421,22 @@
         display: flex;
         flex-direction: column;
     }
-
+    .dataSoftware .correctData{
+        margin-bottom: 20px;
+    }
     .downloadSoftware h3{
-        font-size: 4rem;
+        font-size: 5rem;
     }
     .downloadSoftware .downloadOptions{
         margin-top: 35px;
+        flex-direction: column;
     }
-    .downloadSoftware .downloadOptions a{
-        margin-bottom: 20px;
+    .downloadSoftware .downloadOptions a:first-child{
+        margin-bottom: 50px;
     }
     .downloadSoftware .downloadOptions img{
-        width: 320px;
-        height: 106px;
+        width: 400px;
+        height: 132px;
     }
     .changelogSoftware {
         display: none;
@@ -436,6 +446,33 @@
     }
     .versionText{
         font-size: 3rem;
+    }
+
+
+
+    .modalError{
+        display: grid;
+        grid-template-rows: auto auto auto auto 300px;
+        margin: 15% auto; 
+        width: 75%; 
+        min-height: 500px;
+    }
+    .modalError h2{
+        font-size: 5rem;
+    }
+    .modalError p{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .modalError button{
+        width: 400px;
+        height: 150px;
+        grid-row: 5/5;
+        margin-bottom: 50px;
+    }
+
+    .modalError button p{
+        font-size: 4rem;
     }
 }
 
