@@ -1,7 +1,7 @@
 .aboutPage{
     display: grid;
-    grid-template-columns: 5% 250px auto 5%;
-    grid-template-rows: 120px 250px auto 50px ;
+    grid-template-columns: 5% 300px auto 5%;
+    grid-template-rows: 120px 300px auto 50px ;
 }
 .aboutPage h2{
     grid-column: 2/4;
