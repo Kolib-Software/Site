@@ -41,11 +41,6 @@
     <meta name="twitter:description"
         content="Explore our range of innovative software solutions. From development tools to enterprise applications, Kolib Software has what you need.">
     <meta name="twitter:image" content="https://dev.kolibsoftware.com/assets/Images/LogoHD.png">
-
-    <!-- JavaScript modules -->
-
-    <script src="../JS/Locale.js" type="module"></script>
-    <script src="../JS/changeLanguaje.js" type="module"></script>
 </head>
 
 <body>
@@ -82,35 +77,35 @@
                 <p id="groupState" class="groupCategorie textoCodigo" data-locale="text=categorie_group_State">State</p>
                 <div id="categorieaReleased" class="categorieNumbers" data-categorie="Released">
                     <p class="categorie" data-locale="text=categorie_released">Released</h3>
-                    <p class="categorie">[1]</p>
+                    <p class="categorie">[0]</p>
                 </div>
                 <div id="categorieNotReleased" class="categorieNumbers" data-categorie="Not Released">
                     <p class="categorie" data-locale="text=categorie_notReleased">Not Released</p>
-                    <p class="categorie">[2]</p>
+                    <p class="categorie">[0]</p>
                 </div>
 
                 <p id="groupPrice" class="groupCategorie" data-locale="text=categorie_group_price">Price</p>
                 <div id="categorieFree" class="categorieNumbers" data-categorie="Free">
                     <p class="categorie" data-locale="text=categorie_free">Free</h3>
-                    <p class="categorie">[3]</p>
+                    <p class="categorie">[0]</p>
                 </div>
                 <div id="categoriePay" class="categorieNumbers" data-categorie="Pay">
                     <p class="categorie" data-locale="text=categorie_pay">Pay</p>
-                    <p class="categorie">[4]</p>
+                    <p class="categorie">[0]</p>
                 </div>
 
                 <p id="groupPlatform" class="groupCategorie" data-locale="text=categorie_group_platform">Platform</p>
                 <div id="categorieWindows" class="categorieNumbers" data-categorie="Windows">
                     <p class="categorie">Windows</h3>
-                    <p class="categorie">[5]</p>
+                    <p class="categorie">[0]</p>
                 </div>
                 <div id="categorieAndroid" class="categorieNumbers" data-categorie="Android">
                     <p class="categorie">Android</p>
-                    <p class="categorie">[6]</p>
+                    <p class="categorie">[0]</p>
                 </div>
                 <div id="categorieWeb" class="categorieNumbers" data-categorie="Web">
                     <p class="categorie">Web</p>
-                    <p class="categorie">[7]</p>
+                    <p class="categorie">[0]</p>
                 </div>
             </div>
 
@@ -139,21 +134,21 @@
                     <img id="bannerSoftware" alt="Banner"/>
                     <div id="dataSoftware" class="dataSoftware">
                         <div class="correctData">
-                            <p class="textoBasico">Release Date:</p>
-                            <p class="textoBasico">Release Date</p>
+                            <p class="textoBasico" data-locale="text=dataSoftware_releaseDate;format={0}:"></p>
+                            <p class="textoBasico"></p>
                         </div>
                         <div class="correctData">
-                            <p class="textoBasico">Platform:</p>
-                            <p class="textoBasico">Platform</p>
+                            <p class="textoBasico" data-locale="text=dataSoftware_platform;format={0}:"></p>
+                            <p class="textoBasico"></p>
                         </div>
                         <div class="correctData">
-                            <p class="textoBasico">Architecture:</p>
-                            <p class="textoBasico">Platform</p>
+                            <p class="textoBasico" data-locale="text=dataSoftware_archi;format={0}:"></p>
+                            <p class="textoBasico"></p>
                         </div>
                     </div>
                     <div id="downloadSoftware" class="downloadSoftware">
-                        <h3 class="textoCodigo">Download</h3>
-                        <p class="textoBasico">Latest Version</p>
+                        <h3 class="textoCodigo" data-locale="text=downloadSection_Download"></h3>
+                        <p class="textoBasico" data-locale="text=downloadSection_latestVersion">Latest Version</p>
                         <div class="downloadOptions">
                             <a target="_blank"> 
                                 <img data-locale="srcset=bandage_GooglePlay" alt="Playstore"/>    
@@ -162,14 +157,14 @@
                                 <img data-locale="srcset=bandage_APK" alt="APK"/> 
                             </a>
                         </div>
-                        <h3 class="textoCodigo">Previous versions</h3>
+                        <h3 class="textoCodigo" data-locale="text=downloadSection_previousVersions">Previous versions</h3>
                         
                     </div>
                 </div>
                 <div class="softwareLeft">
                     <p id="descriptionSoftware" class="descriptionSoftware textoBasico">Description</p>
                     <div id="changelogSoftware" class="changelogSoftware">
-                        <h3 class="textoCodigo">Changelog</h3>
+                        <h3 class="textoCodigo" data-locale="text=changelog_title"></h3>
                     </div>
                 </div>
             </div>
@@ -209,7 +204,16 @@
             
         </article>
 
-        <script src="../JS/Views/software.js" type="module"></script>
+        <div id="modalFrame" class="modalFrame">
+            <div class="modalError">
+                <h2 class="textoCodigo">Error</h2>
+                <p class="textoCodigo">Mensaje de error</p>
+                <p class="textoCodigo"></p>
+                <button id="btnreloadPage">
+                    <p>Refresh</p>
+                </button>
+            </div>
+        </div>
 
     </main>
 
@@ -300,6 +304,15 @@
 
         <p class="textoCopy copyright" > &copy; 2024 Kolib Software</p>
     </footer>
+
+    <!-- JavaScript modules -->
+
+    <script src="../JS/Locale.js" type="module"></script>
+    <script src="../JS/changeLanguaje.js" type="module"></script>
+
+    <!-- JavaScript Scripts-->
+
+    <script src="../JS/Views/software.js" type="module"></script>
 
 </body>
 

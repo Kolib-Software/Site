@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Sora:wght@100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 html {
     background-color: #1C1C1C;
@@ -82,7 +83,7 @@ main {
 
 .textoCodigo {
     color: #6AA84F;
-    font-family: Consolas;
+    font-family: Consolas, "Source Code Pro", monospace;
 }
 
 .textoBasico {

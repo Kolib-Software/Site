@@ -1,8 +1,15 @@
+import { getTranslation } from "../Locale.js";
+
+const translation = await getTranslation(localStorage.locale);
 const sectionCategories = document.getElementById("sectionCategories");
 const searchSoftware = document.getElementById("searchSoftware");
 const moduleLatestReleases = document.getElementById("moduleLatestReleases");
 const moduleSoftware = document.getElementById("moduleSoftware");
 const moduleListsoftware = document.getElementById("moduleListsoftware");
+
+let errorText;
+const modalFrame = document.getElementById("modalFrame");
+const btnreloadPage = document.getElementById("btnreloadPage");
 
 let LatestReleaseProject = "Ranchito";
 
@@ -15,7 +22,7 @@ ViewLatestReleases();
 
 async function fetchData() {
     try {
-        const response = await fetch("../../../data.json", {
+        const response = await fetch("/data.json", {
             method: "GET"
         });
 
@@ -33,8 +40,10 @@ async function fetchData() {
             return data;
         }
     } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
-        //Mostrar pagina de error
+        console.error(error);
+        modalFrame.children[0].children[1].innerText = "There was a problem with the fetch operation: ";
+        modalFrame.children[0].children[2].innerText = error;
+        modalFrame.style.display = "grid";
     }
 }
 
@@ -303,7 +312,7 @@ async function ViewSoftware(software){
 
     project.changelog.forEach((change) => {
         const clon = changeLogVersionTemplate.content.cloneNode(true);
-        clon.children[0].innerText = "Version " + change.version;
+        clon.children[0].innerText = "Ver. " + change.version;
         if (localStorage.locale === "en") {
             clon.children[1].innerText = change.info_en;
         } else if (localStorage.locale === "es") {
@@ -345,8 +354,7 @@ async function SearchSoftware(searchValue){
         listaSoftware = datasSoftware.software.filter(software =>
             software.name.toLowerCase().includes(searchValue.trim().toLowerCase())
         );
-    
-        moduleListsoftware.children[0].innerText = "Search " + searchValue;
+        moduleListsoftware.children[0].innerText = translation["searching_somenthing"] + ": " + searchValue;
     }
 
     ListGenerator(listaSoftware);
@@ -372,22 +380,39 @@ async function CategorieSoftware(categorie){
 
     if(categorie === "All"){
         listaSoftware = datasSoftware.software;
+        moduleListsoftware.children[0].innerText = translation["categorie_all"];
     }
     else if(categorie === "Released" || categorie === "Not Released"){
         listaSoftware = datasSoftware.software.filter(item => item.categories.state === categorie);
+        switch(categorie){
+            case "Released":
+                moduleListsoftware.children[0].innerText = translation["categorie_released"];
+                break;
+            case "Not Released":
+                moduleListsoftware.children[0].innerText = translation["categorie_notReleased"];
+                break;
+        }
     }
     else if(categorie === "Free" || categorie === "Pay"){
         listaSoftware = datasSoftware.software.filter(item => item.categories.price === categorie);
+        switch(categorie){
+            case "Free":
+                moduleListsoftware.children[0].innerText = translation["categorie_free"];
+                break;
+            case "Pay":
+                moduleListsoftware.children[0].innerText = translation["categorie_pay"];
+                break;
+        }
     }
     else if(categorie === "Windows" || categorie === "Android" || categorie === "Web"){
         listaSoftware = datasSoftware.software.filter(item => item.categories.platform === categorie);
+        moduleListsoftware.children[0].innerText = categorie;
     }
     else{
         // Error, mostrar lista vacia o algun modulo de no encontrado o error, or something
     }
 
-    moduleListsoftware.children[0].innerText = categorie;
-
+    searchSoftware.value = "";
     ListGenerator(listaSoftware);
 }
 
@@ -395,8 +420,7 @@ async function CategorieSoftware(categorie){
 // List generation
 // =============================
 
-function ListGenerator(listaSoftware){
-
+async function ListGenerator(listaSoftware){
     while (moduleListsoftware.childNodes.length > 2) {
         moduleListsoftware.removeChild(moduleListsoftware.lastChild);
     }
@@ -419,30 +443,23 @@ function ListGenerator(listaSoftware){
             dataMini.children[1].innerText = software.descriptionShort_en;
         }
 
-        if(localStorage.locale === "es"){
-
-            if(software.categories.state == "Released")
-            {
-                dataMini.children[2].children[0].innerText = "[Publicado]";
-            }
-            if(software.categories.state == "Not Released")
-            {
-                dataMini.children[2].children[0].innerText = "[No disponible]";
-            }
-
-            if(software.categories.price == "Free")
-            {
-                dataMini.children[2].children[1].innerText = "[Gratis]";
-            }
-            if(software.categories.price == "Pay")
-            {
-                dataMini.children[2].children[1].innerText = "[Paga]";
-            }
+        if(software.categories.state == "Released")
+        {
+            dataMini.children[2].children[0].innerText = "[" + translation["categorie_released"] + "]";
         }
-        else{
-            dataMini.children[2].children[0].innerText = "[" + software.categories.state + "]";
-            dataMini.children[2].children[1].innerText = "[" + software.categories.price + "]";
+        if(software.categories.state == "Not Released")
+        {
+            dataMini.children[2].children[0].innerText = "[" + translation["categorie_notReleased"] + "]";
         }
+
+        if(software.categories.price == "Free")
+        {
+            dataMini.children[2].children[1].innerText = "[" + translation["categorie_free"] + "]";
+        }
+        if(software.categories.price == "Pay")
+        {
+            dataMini.children[2].children[1].innerText = "[" + translation["categorie_pay"] + "]";
+        };
 
         var acortadorxd = software.categories.platform;
             if(acortadorxd == "Windows" || acortadorxd == "Android" || acortadorxd == "Web"){
@@ -464,6 +481,15 @@ function asignEventforSoftware(){
         });
     });
 }
+
+
+// =============================
+// || Modal
+// =============================
+
+btnreloadPage.addEventListener("click", function(){
+    window.location.reload();
+});
 
 // =============================
 // || Mobile
