@@ -27,7 +27,7 @@ async function fetchData() {
         });
 
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error(translation["modalError_networkError"]);
         }
 
         const data = await response.json();
@@ -41,7 +41,7 @@ async function fetchData() {
         }
     } catch (error) {
         console.error(error);
-        modalFrame.children[0].children[1].innerText = "There was a problem with the fetch operation: ";
+        modalFrame.children[0].children[1].innerText = translation["modalError_fetchError"] + ": ";
         modalFrame.children[0].children[2].innerText = error;
         modalFrame.style.display = "grid";
     }
@@ -510,48 +510,68 @@ let categorieAndroid = document.getElementById("categorieAndroid");
 let categorieWeb = document.getElementById("categorieWeb");
 
 let isHidden = false;
+let widthDispositivo = window.innerWidth;
 
 headCategories.addEventListener("click", () => {
     categoriaMovil();
 });
 
 function categoriaMovil(){
-    if(isHidden === false) {
-        categorieAll.style.display = "none";
-        groupState.style.display = "none";
-        categorieaReleased.style.display = "none";
-        categorieNotReleased.style.display = "none";
-        groupPrice.style.display = "none";
-        categorieFree.style.display = "none";
-        categoriePay.style.display = "none";
-        groupPlatform.style.display = "none";
-        categorieWindows.style.display = "none";
-        categorieAndroid.style.display = "none";
-        categorieWeb.style.display = "none";
-
-        sectionCategories.style.borderRight = "none";
-        isHidden = true;
-
+    if(widthDispositivo == "980"){
+        if(isHidden === false) {
+            categorieAll.style.display = "none";
+            groupState.style.display = "none";
+            categorieaReleased.style.display = "none";
+            categorieNotReleased.style.display = "none";
+            groupPrice.style.display = "none";
+            categorieFree.style.display = "none";
+            categoriePay.style.display = "none";
+            groupPlatform.style.display = "none";
+            categorieWindows.style.display = "none";
+            categorieAndroid.style.display = "none";
+            categorieWeb.style.display = "none";
+    
+            sectionCategories.style.borderRight = "none";
+            isHidden = true;
+    
+        }
+        else{
+            categorieAll.style.display = "flex";
+            groupState.style.display = "block";
+            categorieaReleased.style.display = "flex";
+            categorieNotReleased.style.display = "flex";
+            groupPrice.style.display = "block";
+            categorieFree.style.display = "flex";
+            categoriePay.style.display = "flex";
+            groupPlatform.style.display = "block";
+            categorieWindows.style.display = "flex";
+            categorieAndroid.style.display = "flex";
+            categorieWeb.style.display = "flex"; 
+    
+            sectionCategories.style.borderRight = "5px solid #6AA84F";
+            isHidden = false;
+        }
     }
     else{
         categorieAll.style.display = "flex";
-        groupState.style.display = "block";
-        categorieaReleased.style.display = "flex";
-        categorieNotReleased.style.display = "flex";
-        groupPrice.style.display = "block";
-        categorieFree.style.display = "flex";
-        categoriePay.style.display = "flex";
-        groupPlatform.style.display = "block";
-        categorieWindows.style.display = "flex";
-        categorieAndroid.style.display = "flex";
-        categorieWeb.style.display = "flex"; 
-
-        sectionCategories.style.borderRight = "5px solid #6AA84F";
-        isHidden = false;
+            groupState.style.display = "block";
+            categorieaReleased.style.display = "flex";
+            categorieNotReleased.style.display = "flex";
+            groupPrice.style.display = "block";
+            categorieFree.style.display = "flex";
+            categoriePay.style.display = "flex";
+            groupPlatform.style.display = "block";
+            categorieWindows.style.display = "flex";
+            categorieAndroid.style.display = "flex";
+            categorieWeb.style.display = "flex"; 
+    
+            sectionCategories.style.borderRight = "5px solid #6AA84F";
+            isHidden = false;
     }
+    
 }
 
-let widthDispositivo = window.innerWidth;
+
 
 if(widthDispositivo == "980"){
     categoriaMovil();

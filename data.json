@@ -7,7 +7,7 @@
     "descriptionShort_es": "Aplicación que permite mantener un registro detallado del ganado y sus vacunas mediante el uso de códigos QR. Con la capacidad de escanear códigos rápidamente, los usuarios pueden acceder y actualizar datos en tiempo real, asegurando un control preciso y actualizado de la salud del ganado.",
     "descriptionLong_en": "An application that allows you to maintain a detailed record of livestock and their vaccines using barcodes or QR codes. This tool is extremely convenient and practical, making it easy to manage large amounts of information efficiently. With the ability to quickly scan codes, users can access and update data in real-time, ensuring precise and up-to-date control of livestock health. Ideal for farmers and ranch managers looking to optimize their daily operations and improve livestock traceability.",
     "descriptionLong_es": "Aplicación que permite mantener un registro detallado del ganado y sus vacunas mediante el uso de códigos de barras o códigos QR. Esta herramienta es extremadamente cómoda y práctica, facilitando la gestión de grandes cantidades de información de manera eficiente. Con la capacidad de escanear códigos rápidamente, los usuarios pueden acceder y actualizar datos en tiempo real, asegurando un control preciso y actualizado de la salud del ganado. Ideal para rancheros y administradores de ranchos que buscan optimizar sus operaciones diarias y mejorar la trazabilidad de su ganado.",
-    "release_date": "Unknown",
+    "release_date": "???",
     "platform": "Android 6 - Android 14",
     "architecture": "Arm64",
     "categories": {
@@ -16,7 +16,7 @@
       "platform": "Android"
     },
     "version": {
-      "latest_version"    : {"version": "1.1.1", "apk": "../Downloads/Ranchito/v1.1.1/org.kolibsoftware.ranchito.apk", "playstore": "https://play.google.com/store/apps/details?id=com.llc3909.papersplease"},
+      "latest_version"    : {"version": "1.1.1", "apk": "../Downloads/Ranchito/v1.1.1/org.kolibsoftware.ranchito.apk", "playstore": ""},
       "previous_versions": [
         {
           "version": "1.0.0", 
@@ -38,49 +38,15 @@
     "changelog": [
       {
       "version" : "1.0",
-      "info_en": "Lanzamiento inicial en ingles, Lanzamiento inicial en ingles Lanzamiento inicial en ingles Lanzamiento inicial en ingles.",
-      "info_es": "Lanzamiento inicial en español, Lanzamiento inicial en español, Lanzamiento inicial en español, Lanzamiento inicial en español."
+      "info_en": "",
+      "info_es": ""
       },
       {
         "version" : "0.9",
-        "info_en": "Lanzamiento previo en ingles, Lanzamiento previo en inglesLanzamiento previo en ingles.",
-        "info_es": "Lanzamiento previo en español, Lanzamiento previo en españolLanzamiento previo en español."
-        }
+        "info_en": "",
+        "info_es": ""
+      }
     ] 
-  },
-  {
-    "id": "2",
-    "name": "Academy Hub",
-    "descriptionShort_en": "Academy in english Academyinenglish Academy inenglish Academyin english",
-    "descriptionShort_es": "Academy en español Academyenespañol Academy enespañol Academyen español",
-    "release_date": "Unknown",
-    "platform": ".NET ???",
-    "architecture": "???",
-    "categories": {
-      "state": "Not Released",
-      "price": "Pay",
-      "platform": "Web"
-    },
-    "images":{
-      "banner": "https://topologiasdered.com/wp-content/uploads/Cisco-Packet-tracer-descarga.webp"
-    }
-  },
-  {
-    "id": "3",
-    "name": "Ran Tacos",
-    "descriptionShort_en": "taco in english tacoinenglish taco inenglish tacoin english",
-    "descriptionShort_es": "taco en español tacoenespañol taco enespañol tacoen español",
-    "release_date": "Unknown",
-    "platform": ".NET ???",
-    "architecture": "???",
-    "categories": {
-      "state": "Released",
-      "price": "Free",
-      "platform": "Windows"
-    },
-    "images":{
-      "banner": "https://i.ytimg.com/vi/_lovev6KcbU/maxresdefault.jpg"
-    }
-  } 
+  }
 ]
 }
