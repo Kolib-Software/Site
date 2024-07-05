@@ -101,7 +101,6 @@ footer a:hover p{
     footer a, .BanderaLenguaje{
         height: 160px;
         width: 480px;
-        justify-content: center;
     }
     footer .iconSN, .BanderaLenguaje svg{
         height: 120px;
