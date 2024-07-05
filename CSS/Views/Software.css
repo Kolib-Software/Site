@@ -18,6 +18,10 @@
     padding-left: 10px;
     color: #FFFFFF;
 }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 .sectionCategories{
     grid-column: 2/2;
     grid-row: 2/2;
@@ -308,6 +312,10 @@
 }
 
 @media only screen and (max-width: 980px) { 
+
+    .softwarePage{
+        margin-top: 36.520px;
+    }
 
     .moduleLatestReleases{
         padding-left: 10px;
