@@ -84,19 +84,31 @@ footer a:hover p{
 
 
 @media only screen and (max-width: 980px) {
+    .contenedorModulos{
+        justify-content: center;
+    }
+    .contenedorModulos div:not(.BanderaLenguaje){
+        max-width: 470px;
+        min-width: 350px;
+        max-height: 500px;
+        min-height: 250px;
+        margin-left: 5px;
+    }
     footer .textoCodigo{
-        font-size: 5rem;
+        font-size: 5.5rem;
+        text-align-last: center;
     }
     footer a, .BanderaLenguaje{
-        height: 125px;
+        height: 160px;
         width: 480px;
+        justify-content: center;
     }
     footer .iconSN, .BanderaLenguaje svg{
-        height: 100px;
-        width: 100px;
+        height: 120px;
+        width: 120px;
     }
     footer a p, .BanderaLenguaje p{
-        font-size: 4rem !important;
+        font-size: 5rem !important;
     }
     footer a p, .BanderaLenguaje p {
         margin-left: 30px;
