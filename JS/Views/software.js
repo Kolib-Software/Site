@@ -188,41 +188,38 @@ async function FirstLatestRelease(software) {
 
     const LatestRelease01 = document.getElementById("LatestRelease01");
 
+    LatestRelease01.children[0].dataset.software = software;
+
     if(first.images.banner){
-        LatestRelease01.children[0].srcset = first.images.banner;
-        LatestRelease01.children[0].dataset.software = software;
+        LatestRelease01.children[0].children[0].srcset = first.images.banner;
     }
     else{
-        // Mostrar imagen de no disponible o algo asi
+        LatestRelease01.children[0].children[0].srcset = "../assets/images/ina/ina900px.avif, ../assets/images/ina/ina900px.webp, ../assets/images/ina/ina900px.png";
     }
 
-    LatestRelease01.children[1].children[0].innerText = first.name;
-    LatestRelease01.children[1].children[0].dataset.software = software;
+
+    LatestRelease01.children[0].children[1].innerText = first.name;
 
     LatestRelease01.children[0].addEventListener("click", function(){
         var dato = this.dataset.software;   
         ViewSoftware(dato);
     });
-    LatestRelease01.children[1].children[0].addEventListener("click", function(){
-        var dato = this.dataset.software;   
-        ViewSoftware(dato);
-    });
 
     if (localStorage.locale === "en") {
-        LatestRelease01.children[1].children[1].innerText = first.descriptionShort_en;
+        LatestRelease01.children[0].children[2].innerText = first.descriptionShort_en;
     } 
     else if (localStorage.locale === "es") {
-        LatestRelease01.children[1].children[1].innerText = first.descriptionShort_es;
+        LatestRelease01.children[0].children[2].innerText = first.descriptionShort_es;
     } 
     else {
-        LatestRelease01.children[1].children[1].innerText = first.descriptionShort_en;
+        LatestRelease01.children[0].children[2].innerText = first.descriptionShort_en;
     }
 
 
     let PlayStoreLink = first.version.latest_version.playstore;
-    let PlayStoreButton = LatestRelease01.children[1].children[2].children[0];
+    let PlayStoreButton = LatestRelease01.children[1].children[0];
     let ApkLink = first.version.latest_version.apk;
-    let ApkButton = LatestRelease01.children[1].children[2].children[1];
+    let ApkButton = LatestRelease01.children[1].children[1];
 
     if(PlayStoreLink){
         PlayStoreButton.href = PlayStoreLink;
@@ -265,7 +262,13 @@ async function ViewSoftware(software){
 
     h2Software.innerText = "// " + project.name;
 
-    bannerSoftware.srcset = project.images.banner;
+    if(project.images.banner){
+        bannerSoftware.srcset = project.images.banner;
+    }
+    else{
+        bannerSoftware.srcset = "../assets/images/ina/ina900px.avif, ../assets/images/ina/ina900px.webp, ../assets/images/ina/ina900px.png";
+    }
+    
 
     dataSoftware.children[0].children[1].innerText = project.release_date;
     dataSoftware.children[1].children[1].innerText = project.platform;
@@ -430,7 +433,12 @@ async function ListGenerator(listaSoftware){
 
         clon.children[0].dataset.software = software.name;
 
-        clon.children[0].children[0].srcset = software.images.banner;
+        if(software.images.banner){
+            clon.children[0].children[0].srcset = software.images.banner;
+        }
+        else{
+            clon.children[0].children[0].srcset = "../assets/images/ina/ina900px.avif, ../assets/images/ina/ina900px.webp, ../assets/images/ina/ina900px.png";
+        } 
 
         var dataMini = clon.children[0].children[1];
 
