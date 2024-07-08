@@ -90,7 +90,7 @@ main {
     color: #FFFFFF;
     font-family: "Sora", sans-serif;
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 4.5rem;
 }
 .headText {
     color: #6AA84F;
@@ -149,7 +149,7 @@ main {
     }
     .textoBasico {
         font-size: 3rem;
-        line-height: 4rem;
+        line-height: 5.5rem;
     }
     .textoNav{
         margin-top: 10px;

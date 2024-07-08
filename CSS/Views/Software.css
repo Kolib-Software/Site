@@ -318,7 +318,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         padding-left: 10px;
     }
     .LatestRelease01{
-        grid-template-rows: 360px;
+        grid-template-rows: 520px;
         grid-template-columns: auto;
     }
     .LatestRelease01 h4{
@@ -330,8 +330,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .LatestRelease01 .bannerProject{
         grid-column: 1/1;
         grid-row: 1/1;
-        height: 332px;
-        width: 465px;
+        height: 500px;
+        width: 700px;
         cursor: pointer;
         justify-self: center;
     }
@@ -404,8 +404,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .principalOptionsDownload img{
-        width: 360px;
-        height: 120px;
+        margin-top: 25px;
+        width: 600px;
+        height: 200px;
     }
     .principalOptionsDownload img:hover {
     }
