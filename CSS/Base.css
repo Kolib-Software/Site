@@ -48,10 +48,15 @@ header nav{
 }
 
 header nav a {
-  border-left: 0px solid transparent; 
-  border-bottom: 0px solid transparent; 
-  padding: 10px;
-  transition: border 0.5s; 
+    border-left: 0px solid transparent; 
+    border-bottom: 0px solid transparent; 
+    padding: 10px;
+    transition: border 0.5s; 
+
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -ms-user-select: none; /* Internet Explorer */
+    user-select: none; /* Estándar */
 }
 
 header nav a:hover {
@@ -79,6 +84,11 @@ main {
     transition: border 0.5s; 
     border-left: 5px solid #6AA84F;
     border-bottom: 5px solid #6AA84F;
+
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -ms-user-select: none; /* Internet Explorer */
+    user-select: none; /* Estándar */
 }
 
 .textoCodigo {
