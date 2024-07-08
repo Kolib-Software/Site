@@ -348,7 +348,7 @@ async function SearchSoftware(searchValue){
 
     if(searchValue === ""){
         listaSoftware = datasSoftware.software;
-        moduleListsoftware.children[0].innerText = "All";
+        moduleListsoftware.children[0].innerText = translation["categorie_all"];
     }
     else{
         listaSoftware = datasSoftware.software.filter(software =>
