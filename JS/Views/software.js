@@ -123,47 +123,6 @@ categories.forEach(category => {
         const categorieType = category.dataset.categorie;
 
         CategorieSoftware(categorieType);
-        
-        /*
-        switch(categorieType) {
-            case 'All':
-                console.log('Has clicado en All');
-                // Acción para 'All'
-                break;
-            case 'Released':
-                console.log('Has clicado en Released');
-                // Acción para 'Released'
-                break;
-            case 'Not Released':
-                console.log('Has clicado en Not Released');
-                // Acción para 'Not Released'
-                break;
-            case 'Free':
-                console.log('Has clicado en Free');
-                // Acción para 'Free'
-                break;
-            case 'Pay':
-                console.log('Has clicado en Pay');
-                // Acción para 'Pay'
-                break;
-            case 'Windows':
-                console.log('Has clicado en Windows');
-                // Acción para 'Windows'
-                break;
-            case 'Android':
-                console.log('Has clicado en Android');
-                // Acción para 'Android'
-                break;
-            case 'Web':
-                console.log('Has clicado en Web');
-                // Acción para 'Web'
-                break;
-            default:
-                console.log('Categoría desconocida');
-                // Acción para categorías desconocidas
-        }
-
-        */
     });
 });
 
@@ -260,7 +219,20 @@ async function ViewSoftware(software){
     const softwareArray = await dataArray.software;
     let project = await softwareArray.find((project) => project.name === software);
 
-    h2Software.innerText = "// " + project.name;
+    h2Software.innerText = "<--" + " " + project.name;
+
+    h2Software.style.cursor = "pointer";
+
+    h2Software.addEventListener('click', () => {
+        moduleSoftware.style.display = "none";
+        h2Software.style.cursor = "initial";
+        h2Software.innerText = "Software";
+        searchSoftware.style.display= "initial";
+        sectionCategories.style.display = "initial";
+        moduleListsoftware.style.display = "grid";
+        
+        SearchSoftware("");
+    });
 
     if(project.images.banner){
         bannerSoftware.srcset = project.images.banner;
@@ -278,12 +250,22 @@ async function ViewSoftware(software){
 
     let downloadSoftware = document.getElementById("downloadSoftware");
 
+    if(project.categories.price == "Pay"){
+        downloadSoftware.children[0].innerText = translation["buySection_Buy"];
+        downloadSoftware.children[1].innerText = translation["buySection_latestVersion"];
+    }
+    else{
+        downloadSoftware.children[0].innerText = translation["downloadSection_Download"];
+        downloadSoftware.children[1].innerText = translation["downloadSection_latestVersion"];
+    }
+
     let PlayStoreLink = project.version.latest_version.playstore;
     let PlayStoreButton = downloadSoftware.children[2].children[0];
     let ApkLink = project.version.latest_version.apk;
     let ApkButton = downloadSoftware.children[2].children[1];
 
     if(PlayStoreLink){
+        PlayStoreButton.style.display = "initial";
         PlayStoreButton.href = PlayStoreLink;
     }
     else{
@@ -291,6 +273,7 @@ async function ViewSoftware(software){
     }
     
     if(ApkLink){
+        ApkButton.style.display = "initial";
         ApkButton.href = ApkLink;
     }
     else{
@@ -309,25 +292,32 @@ async function ViewSoftware(software){
         descriptionSoftware.innerText = project.descriptionLong_en;
     }
 
-
     let changelogSoftware = document.getElementById("changelogSoftware");
-    let changeLogVersionTemplate = document.getElementById("changeLogVersion");
 
-    project.changelog.forEach((change) => {
-        const clon = changeLogVersionTemplate.content.cloneNode(true);
-        clon.children[0].innerText = "Ver. " + change.version;
-        if (localStorage.locale === "en") {
-            clon.children[1].innerText = change.info_en;
-        } else if (localStorage.locale === "es") {
-            clon.children[1].innerText = change.info_es;
-        } else {
-            clon.children[1].innerText = change.info_en;
+    if(project.changelog){
+        let changeLogVersionTemplate = document.getElementById("changeLogVersion");
+        while(changelogSoftware.children.length != 1){
+            changelogSoftware.removeChild(changelogSoftware.lastChild);
         }
-        changelogSoftware.appendChild(clon);
-    });
-    
-
-
+        project.changelog.forEach((change) => {
+            const clon = changeLogVersionTemplate.content.cloneNode(true);
+            clon.children[0].innerText = "Ver. " + change.version;
+            if (localStorage.locale === "en") {
+                clon.children[1].innerText = change.info_en;
+            } else if (localStorage.locale === "es") {
+                clon.children[1].innerText = change.info_es;
+            } else {
+                clon.children[1].innerText = change.info_en;
+            }
+            changelogSoftware.appendChild(clon);
+        });
+    }
+    else{
+        changelogSoftware.children[0].innerText = translation["non_changelogs"];
+        while(changelogSoftware.children.length != 1){
+            changelogSoftware.removeChild(changelogSoftware.lastChild);
+        }
+    }
 }
 
 // =============================
