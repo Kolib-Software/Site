@@ -33,6 +33,31 @@
           "info_es": "Primera versión de la applicación."
         }
       ]
+    },
+  {
+    "id": "2",
+    "name": "Academy Hub",
+    "descriptionShort_en": "A flexible platform that adapts to the needs of each institution. It allows for the simplification of school processes with features such as class scheduling, grade recording, and attendance tracking.",
+    "descriptionShort_es": "Una plataforma flexible que se adapta a las necesidades de cada institución. Permite simplificar los procesos escolares con funciones como programación de clases, registro de calificaciones y seguimiento de asistencia.",
+    "descriptionLong_en": "A flexible and customizable educational platform that adapts to the specific needs of each institution. With it, it’s possible to simplify and optimize school processes through essential functions, such as class scheduling, grade recording, and student attendance tracking.",
+    "descriptionLong_es": "Una plataforma educativa flexible y personalizable que se adapta a las necesidades específicas de cada institución. Con ella, es posible simplificar y optimizar los procesos escolares mediante funciones esenciales, como la programación de clases, el registro de calificaciones y el seguimiento de la asistencia de los estudiantes.",
+    "release_date": "Coming Soon",
+    "platform": "Web",
+    "architecture": ".NET (6 - 8)",
+    "categories": {
+      "state": "Not Released",
+      "price": "Pay",
+      "platform": "Web"
+    },
+    "version": {
+      "latest_version": {
+      },
+      "previous_versions": [
+      ]
+    },
+    "images":{
+      "banner": "../assets/Images/Projects/AcademyHub/Banner/Banner.avif, ../assets/Images/Projects/AcademyHub/Banner/Banner.webp, ../assets/Images/Projects/AcademyHub/Banner/Banner.png"
     }
-  ]
+  }
+]
 }
