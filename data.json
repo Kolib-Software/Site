@@ -1,53 +1,39 @@
 {
   "software": [
     {
-    "id": "1",
-    "name": "Ranchito",
-    "descriptionShort_en": "An application that allows you to maintain a detailed record of livestock and their vaccines QR codes. With the ability to quickly scan codes, users can access and update data in real-time, ensuring precise and up-to-date control of livestock health.",
-    "descriptionShort_es": "Aplicación que permite mantener un registro detallado del ganado y sus vacunas mediante el uso de códigos QR. Con la capacidad de escanear códigos rápidamente, los usuarios pueden acceder y actualizar datos en tiempo real, asegurando un control preciso y actualizado de la salud del ganado.",
-    "descriptionLong_en": "An application that allows you to maintain a detailed record of livestock and their vaccines using barcodes or QR codes. This tool is extremely convenient and practical, making it easy to manage large amounts of information efficiently. With the ability to quickly scan codes, users can access and update data in real-time, ensuring precise and up-to-date control of livestock health. Ideal for farmers and ranch managers looking to optimize their daily operations and improve livestock traceability.",
-    "descriptionLong_es": "Aplicación que permite mantener un registro detallado del ganado y sus vacunas mediante el uso de códigos de barras o códigos QR. Esta herramienta es extremadamente cómoda y práctica, facilitando la gestión de grandes cantidades de información de manera eficiente. Con la capacidad de escanear códigos rápidamente, los usuarios pueden acceder y actualizar datos en tiempo real, asegurando un control preciso y actualizado de la salud del ganado. Ideal para rancheros y administradores de ranchos que buscan optimizar sus operaciones diarias y mejorar la trazabilidad de su ganado.",
-    "release_date": "Coming Soon",
-    "platform": "Android 6 - Android 14",
-    "architecture": "Arm64",
-    "categories": {
-      "state": "Released",
-      "price": "Free",
-      "platform": "Android"
-    },
-    "version": {
-      "latest_version"    : {"version": "1.1.1", "apk": "../Downloads/Ranchito/v1.1.1/org.kolibsoftware.ranchito.apk", "playstore": ""},
-      "previous_versions": [
-        {
-          "version": "1.0.0", 
-          "apk": ""
+      "id": "1",
+      "name": "Ranchito",
+      "descriptionShort_en": "An application that allows you to maintain a detailed record of livestock and their vaccines QR codes. With the ability to quickly scan codes, users can access and update data in real-time, ensuring precise and up-to-date control of livestock health.",
+      "descriptionShort_es": "Aplicación que permite mantener un registro detallado del ganado y sus vacunas mediante el uso de códigos QR. Con la capacidad de escanear códigos rápidamente, los usuarios pueden acceder y actualizar datos en tiempo real, asegurando un control preciso y actualizado de la salud del ganado.",
+      "descriptionLong_en": "An application that allows you to maintain a detailed record of livestock and their vaccines using barcodes or QR codes. This tool is extremely convenient and practical, making it easy to manage large amounts of information efficiently. With the ability to quickly scan codes, users can access and update data in real-time, ensuring precise and up-to-date control of livestock health. Ideal for farmers and ranch managers looking to optimize their daily operations and improve livestock traceability.",
+      "descriptionLong_es": "Aplicación que permite mantener un registro detallado del ganado y sus vacunas mediante el uso de códigos de barras o códigos QR. Esta herramienta es extremadamente cómoda y práctica, facilitando la gestión de grandes cantidades de información de manera eficiente. Con la capacidad de escanear códigos rápidamente, los usuarios pueden acceder y actualizar datos en tiempo real, asegurando un control preciso y actualizado de la salud del ganado. Ideal para rancheros y administradores de ranchos que buscan optimizar sus operaciones diarias y mejorar la trazabilidad de su ganado.",
+      "release_date": "---",
+      "platform": "Android 6 - Android 14",
+      "architecture": "Arm64",
+      "categories": {
+        "state": "Released",
+        "price": "Free",
+        "platform": "Android"
+      },
+      "version": {
+        "latest_version": {
+          "version": "1.1.1",
+          "apk": "../Downloads/Ranchito/v1.1.1/org.kolibsoftware.ranchito.apk",
+          "playstore": ""
         },
+        "previous_versions": []
+      },
+      "images": {
+        "banner": "../assets/Images/Projects/Ranchito/Banner/Banner.avif, ../assets/Images/Projects/Ranchito/Banner/Banner.webp, ../assets/Images/Projects/Ranchito/Banner/Banner.png"
+      },
+      "changelog": [
         {
-          "version": "0.9", 
-          "apk": ""
-        },
-        {
-          "version": "0.8", 
-          "apk": ""
+          "version": "1.1.1",
+          "info_en": "First app version.",
+          "info_es": "Primera versión de la applicación."
         }
       ]
     },
-    "images":{
-      "banner": "../assets/Images/Projects/Ranchito/Banner/Banner.avif, ../assets/Images/Projects/Ranchito/Banner/Banner.webp, ../assets/Images/Projects/Ranchito/Banner/Banner.png"
-    },
-    "changelog": [
-      {
-      "version" : "1.0",
-      "info_en": "",
-      "info_es": ""
-      },
-      {
-        "version" : "0.9",
-        "info_en": "",
-        "info_es": ""
-      }
-    ] 
-  },
   {
     "id": "2",
     "name": "Academy Hub",
